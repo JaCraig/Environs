@@ -17,6 +17,7 @@ limitations under the License.
 using System;
 using System.Collections.Generic;
 using System.Dynamic;
+using System.Globalization;
 using System.Linq;
 using System.Management;
 
@@ -36,7 +37,7 @@ namespace Environs
         {
             Server = server ?? throw new ArgumentNullException(nameof(server));
             Options = options ?? new AuthenticationOptions();
-            Namespaces = Execute((CommonClasses)"__Namespace", "root").Select(x => (string)x.Name).ToArray();
+            Namespaces = Execute((CommonClasses)"__Namespace", "root").Select(x => ((string)x.Name).ToLower(CultureInfo.CurrentCulture)).ToArray();
         }
 
         /// <summary>
