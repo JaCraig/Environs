@@ -10,7 +10,7 @@ namespace Environs.Tests
         {
             var TestObject = new Environment();
             var Results = TestObject.Execute(CommonClasses.Bios);
-            Assert.Equal(1, Results.Count());
+            Assert.Single(Results);
             Assert.NotEmpty(Results.First().Manufacturer);
         }
 
@@ -27,7 +27,7 @@ namespace Environs.Tests
         {
             var TestObject = new Environment();
             var Results = TestObject.Execute(CommonClasses.OperatingSystem);
-            Assert.Equal(1, Results.Count());
+            Assert.Single(Results);
             Assert.NotEmpty(Results.First().CSName);
         }
 
@@ -36,7 +36,7 @@ namespace Environs.Tests
         {
             var TestObject = new Environment();
             var Results = TestObject.Execute("SELECT * FROM Win32_LoggedOnUser");
-            Assert.NotEqual(0, Results.Count);
+            Assert.NotEmpty(Results);
             foreach (var Object in Results)
             {
                 Assert.NotEmpty(Object["Antecedent"].ToString());

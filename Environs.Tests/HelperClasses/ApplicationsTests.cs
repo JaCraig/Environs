@@ -10,7 +10,7 @@ namespace Environs.Tests.HelperClasses
         public void GetInstalledApplications()
         {
             var Results = Applications.GetInstalledApplications();
-            Assert.NotEqual(0, Results.Count());
+            Assert.NotEmpty(Results);
         }
     }
 }
