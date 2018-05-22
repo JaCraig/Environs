@@ -63,7 +63,7 @@ namespace Environs.HelperClasses
             if (!IsPrinterInstalled(printerName))
                 return false;
             var TempEnvironment = new Environment();
-            var Results = TempEnvironment.Execute(@"SELECT * FROM Win32_Printer WHERE Name = '" + printerName.Replace("\\", "\\\\") + "'");
+            var Results = TempEnvironment.Execute("SELECT * FROM Win32_Printer WHERE Name = '" + printerName.Replace("\\", "\\\\") + "'");
             if (Results.Count != 0)
             {
                 foreach (ManagementObject Item in Results)
@@ -85,7 +85,7 @@ namespace Environs.HelperClasses
         public static bool IsPrinterInstalled(string printerName)
         {
             var TempEnvironment = new Environment();
-            return TempEnvironment.Execute(@"SELECT * FROM Win32_Printer WHERE Name = '" + printerName.Replace("\\", "\\\\") + "'").Count > 0;
+            return TempEnvironment.Execute("SELECT * FROM Win32_Printer WHERE Name = '" + printerName.Replace("\\", "\\\\") + "'").Count > 0;
         }
 
         /// <summary>
@@ -98,7 +98,7 @@ namespace Environs.HelperClasses
             if (!IsPrinterInstalled(printerName))
                 return;
             var TempEnvironment = new Environment();
-            var Results = TempEnvironment.Execute(@"SELECT * FROM Win32_Printer WHERE Name = '" + printerName.Replace("\\", "\\\\") + "'");
+            var Results = TempEnvironment.Execute("SELECT * FROM Win32_Printer WHERE Name = '" + printerName.Replace("\\", "\\\\") + "'");
             if (Results.Count != 0)
             {
                 foreach (ManagementObject Item in Results)
@@ -117,7 +117,7 @@ namespace Environs.HelperClasses
             if (!IsPrinterInstalled(printerName))
                 return;
             var TempEnvironment = new Environment();
-            var Results = TempEnvironment.Execute(@"SELECT * FROM Win32_Printer WHERE Name = '" + printerName.Replace("\\", "\\\\") + "'");
+            var Results = TempEnvironment.Execute("SELECT * FROM Win32_Printer WHERE Name = '" + printerName.Replace("\\", "\\\\") + "'");
             if (Results.Count != 0)
             {
                 foreach (ManagementObject Item in Results)

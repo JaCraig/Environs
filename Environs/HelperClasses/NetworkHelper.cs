@@ -14,7 +14,6 @@ See the License for the specific language governing permissions and
 limitations under the License.
 */
 
-using System.Linq;
 using System.Net;
 using System.Net.NetworkInformation;
 using System.Net.Sockets;
@@ -34,9 +33,8 @@ namespace Environs.HelperClasses
         /// <returns>The local IPv4 address.</returns>
         public static string GetIPv4Address(string machineName = "localhost")
         {
-            return Dns.GetHostEntry(machineName)
-                      .AddressList
-                      .FirstOrDefault(x => x.AddressFamily == AddressFamily.InterNetwork)
+            return System.Array.Find(Dns.GetHostEntry(machineName)
+                      .AddressList, x => x.AddressFamily == AddressFamily.InterNetwork)
                       ?.ToString();
         }
 
@@ -47,9 +45,8 @@ namespace Environs.HelperClasses
         /// <returns>The local IPv6 address</returns>
         public static string GetIPv6Address(string machineName = "localhost")
         {
-            return Dns.GetHostEntry(machineName)
-                      .AddressList
-                      .FirstOrDefault(x => x.AddressFamily == AddressFamily.InterNetworkV6)
+            return System.Array.Find(Dns.GetHostEntry(machineName)
+                      .AddressList, x => x.AddressFamily == AddressFamily.InterNetworkV6)
                       ?.ToString();
         }
 
@@ -67,7 +64,7 @@ namespace Environs.HelperClasses
                 {
                     DontFragment = true
                 };
-                string Data = "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa";
+                const string Data = "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa";
                 byte[] DataBuffer = Encoding.ASCII.GetBytes(Data);
                 PingReply Reply = PingSender.Send(address, timeOut, DataBuffer, Options);
                 return Reply.Status == IPStatus.Success;

@@ -94,13 +94,13 @@ namespace Environs.LDAP
                 if (recursive)
                 {
                     List<Entry> ReturnValue = new List<Entry>();
-                    foreach (Entry Entry in Entries)
+                    foreach (Entry TempEntry in Entries)
                     {
-                        Entry TempEntry = FindGroup(Entry.CN);
-                        if (TempEntry == null)
-                            ReturnValue.Add(Entry);
+                        Entry GroupEntry = FindGroup(TempEntry.CN);
+                        if (GroupEntry == null)
+                            ReturnValue.Add(TempEntry);
                         else
-                            ReturnValue.AddRange(FindActiveGroupMembers(TempEntry.CN, true));
+                            ReturnValue.AddRange(FindActiveGroupMembers(GroupEntry.CN, true));
                     }
                     return ReturnValue;
                 }
