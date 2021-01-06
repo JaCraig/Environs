@@ -19,5 +19,4 @@
   <ItemGroup>
     <ProjectReference Include="..\Environs\Environs.csproj" />
   </ItemGroup>
-
 </Project>
