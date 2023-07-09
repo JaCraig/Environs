@@ -12,9 +12,9 @@ jobs:
   
     env:
       BUILD_CONFIG: 'Debug'
-      SOLUTION: 'FastActivator.sln'
+      SOLUTION: 'Environs.sln'
 
-    runs-on: ubuntu-latest
+    runs-on: windows-latest
     strategy:
       matrix:
         dotnet-version: [ '6.0.x' ]

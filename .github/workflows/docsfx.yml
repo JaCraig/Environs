@@ -8,7 +8,6 @@ jobs:
   publish-docs:
     env:
       BUILD_CONFIG: 'Release'
-      SOLUTION: 'FastActivator.sln'
     runs-on: ubuntu-latest
     strategy:
       matrix:
@@ -22,12 +21,6 @@ jobs:
       uses: actions/setup-dotnet@v3.2.0
       with:
         dotnet-version: ${{ matrix.dotnet-version }}
-        
-    - name: Restore dependencies
-      run: dotnet restore
-        
-    - name: Build
-      run: dotnet build --no-restore --configuration $BUILD_CONFIG
 
     - run: dotnet tool update -g docfx
     - run: docfx docfx_project/docfx.json
