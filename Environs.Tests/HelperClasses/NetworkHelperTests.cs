@@ -9,6 +9,6 @@ namespace Environs.Tests.HelperClasses
         public void LocalIP4() => Assert.NotNull(NetworkHelper.GetIPv4Address());
 
         [Fact]
-        public void PingHost() => Assert.True(NetworkHelper.PingHost("www.google.com"));
+        public void LocalIP6() => Assert.NotNull(NetworkHelper.GetIPv6Address());
     }
 }
