@@ -7,7 +7,12 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Environs", "Environs\Enviro
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Environs.Tests", "Environs.Tests\Environs.Tests.csproj", "{CF2C6843-53B1-402B-A55C-503E840C0073}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Environs.Example", "Environs.Example\Environs.Example.csproj", "{850A3D97-511C-46CE-9346-9632C53CDEB9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Environs.Example", "Environs.Example\Environs.Example.csproj", "{850A3D97-511C-46CE-9346-9632C53CDEB9}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{FE91701B-956F-4BE0-8322-230F63C549DA}"
+	ProjectSection(SolutionItems) = preProject
+		.editorconfig = .editorconfig
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
