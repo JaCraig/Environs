@@ -220,44 +220,6 @@ references:
   isSpec: "True"
   fullName: Environs.CommonClasses.NetworkDrives
   nameWithType: CommonClasses.NetworkDrives
-- uid: Environs.CommonClasses.op_Explicit(System.String)~Environs.CommonClasses
-  name: explicit operator CommonClasses(string)
-  href: api/Environs.CommonClasses.html#Environs_CommonClasses_op_Explicit_System_String__Environs_CommonClasses
-  commentId: M:Environs.CommonClasses.op_Explicit(System.String)~Environs.CommonClasses
-  name.vb: CType(String)
-  fullName: Environs.CommonClasses.explicit operator Environs.CommonClasses(string)
-  fullName.vb: Environs.CommonClasses.CType(String)
-  nameWithType: CommonClasses.explicit operator CommonClasses(string)
-  nameWithType.vb: CommonClasses.CType(String)
-- uid: Environs.CommonClasses.op_Explicit*
-  name: explicit operator
-  href: api/Environs.CommonClasses.html#Environs_CommonClasses_op_Explicit_
-  commentId: Overload:Environs.CommonClasses.op_Explicit
-  isSpec: "True"
-  name.vb: CType
-  fullName: Environs.CommonClasses.explicit operator
-  fullName.vb: Environs.CommonClasses.CType
-  nameWithType: CommonClasses.explicit operator
-  nameWithType.vb: CommonClasses.CType
-- uid: Environs.CommonClasses.op_Implicit(Environs.CommonClasses)~System.String
-  name: implicit operator string(CommonClasses)
-  href: api/Environs.CommonClasses.html#Environs_CommonClasses_op_Implicit_Environs_CommonClasses__System_String
-  commentId: M:Environs.CommonClasses.op_Implicit(Environs.CommonClasses)~System.String
-  name.vb: CType(CommonClasses)
-  fullName: Environs.CommonClasses.implicit operator string(Environs.CommonClasses)
-  fullName.vb: Environs.CommonClasses.CType(Environs.CommonClasses)
-  nameWithType: CommonClasses.implicit operator string(CommonClasses)
-  nameWithType.vb: CommonClasses.CType(CommonClasses)
-- uid: Environs.CommonClasses.op_Implicit*
-  name: implicit operator
-  href: api/Environs.CommonClasses.html#Environs_CommonClasses_op_Implicit_
-  commentId: Overload:Environs.CommonClasses.op_Implicit
-  isSpec: "True"
-  name.vb: CType
-  fullName: Environs.CommonClasses.implicit operator
-  fullName.vb: Environs.CommonClasses.CType
-  nameWithType: CommonClasses.implicit operator
-  nameWithType.vb: CommonClasses.CType
 - uid: Environs.CommonClasses.OperatingSystem
   name: OperatingSystem
   href: api/Environs.CommonClasses.html#Environs_CommonClasses_OperatingSystem
@@ -349,6 +311,44 @@ references:
   isSpec: "True"
   fullName: Environs.CommonClasses.ToString
   nameWithType: CommonClasses.ToString
+- uid: Environs.CommonClasses.op_Explicit(System.String)~Environs.CommonClasses
+  name: explicit operator CommonClasses(string)
+  href: api/Environs.CommonClasses.html#Environs_CommonClasses_op_Explicit_System_String__Environs_CommonClasses
+  commentId: M:Environs.CommonClasses.op_Explicit(System.String)~Environs.CommonClasses
+  name.vb: CType(String)
+  fullName: Environs.CommonClasses.explicit operator Environs.CommonClasses(string)
+  fullName.vb: Environs.CommonClasses.CType(String)
+  nameWithType: CommonClasses.explicit operator CommonClasses(string)
+  nameWithType.vb: CommonClasses.CType(String)
+- uid: Environs.CommonClasses.op_Explicit*
+  name: explicit operator
+  href: api/Environs.CommonClasses.html#Environs_CommonClasses_op_Explicit_
+  commentId: Overload:Environs.CommonClasses.op_Explicit
+  isSpec: "True"
+  name.vb: CType
+  fullName: Environs.CommonClasses.explicit operator
+  fullName.vb: Environs.CommonClasses.CType
+  nameWithType: CommonClasses.explicit operator
+  nameWithType.vb: CommonClasses.CType
+- uid: Environs.CommonClasses.op_Implicit(Environs.CommonClasses)~System.String
+  name: implicit operator string(CommonClasses)
+  href: api/Environs.CommonClasses.html#Environs_CommonClasses_op_Implicit_Environs_CommonClasses__System_String
+  commentId: M:Environs.CommonClasses.op_Implicit(Environs.CommonClasses)~System.String
+  name.vb: CType(CommonClasses)
+  fullName: Environs.CommonClasses.implicit operator string(Environs.CommonClasses)
+  fullName.vb: Environs.CommonClasses.CType(Environs.CommonClasses)
+  nameWithType: CommonClasses.implicit operator string(CommonClasses)
+  nameWithType.vb: CommonClasses.CType(CommonClasses)
+- uid: Environs.CommonClasses.op_Implicit*
+  name: implicit operator
+  href: api/Environs.CommonClasses.html#Environs_CommonClasses_op_Implicit_
+  commentId: Overload:Environs.CommonClasses.op_Implicit
+  isSpec: "True"
+  name.vb: CType
+  fullName: Environs.CommonClasses.implicit operator
+  fullName.vb: Environs.CommonClasses.CType
+  nameWithType: CommonClasses.implicit operator
+  nameWithType.vb: CommonClasses.CType
 - uid: Environs.Environment
   name: Environment
   href: api/Environs.Environment.html

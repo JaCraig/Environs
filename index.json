@@ -19,11 +19,6 @@
     "title": "Class Applications | Environs API Reference",
     "keywords": "Class Applications Applications helpers Inheritance object Applications Inherited Members object.Equals(object) object.Equals(object, object) object.GetHashCode() object.GetType() object.MemberwiseClone() object.ReferenceEquals(object, object) object.ToString() Namespace: Environs.HelperClasses Assembly: Environs.dll Syntax public static class Applications Methods | Improve this Doc View Source GetInstalledApplications(string, AuthenticationOptions) Gets the installed applications. Declaration public static IEnumerable<string> GetInstalledApplications(string machineName = \"localhost\", AuthenticationOptions options = null) Parameters Type Name Description string machineName Name of the machine. AuthenticationOptions options The options. Returns Type Description IEnumerable<string> The installed applications."
   },
-  "api/Environs.HelperClasses.html": {
-    "href": "api/Environs.HelperClasses.html",
-    "title": "Namespace Environs.HelperClasses | Environs API Reference",
-    "keywords": "Namespace Environs.HelperClasses Classes Applications Applications helpers NetworkHelper Helper methods for network related items. PrinterManager Printer manager"
-  },
   "api/Environs.HelperClasses.NetworkHelper.html": {
     "href": "api/Environs.HelperClasses.NetworkHelper.html",
     "title": "Class NetworkHelper | Environs API Reference",
@@ -34,10 +29,10 @@
     "title": "Class PrinterManager | Environs API Reference",
     "keywords": "Class PrinterManager Printer manager Inheritance object PrinterManager Inherited Members object.Equals(object) object.Equals(object, object) object.GetHashCode() object.GetType() object.MemberwiseClone() object.ReferenceEquals(object, object) object.ToString() Namespace: Environs.HelperClasses Assembly: Environs.dll Syntax public static class PrinterManager Methods | Improve this Doc View Source AddPrinter(string) Adds the printer. Declaration public static bool AddPrinter(string printerName) Parameters Type Name Description string printerName Name of the printer. Returns Type Description bool True if the printer is added, false otherwise | Improve this Doc View Source DeletePrinter(string) Deletes the printer. Declaration public static bool DeletePrinter(string printerName) Parameters Type Name Description string printerName Name of the printer. Returns Type Description bool True if the printer is deleted, false otherwise | Improve this Doc View Source IsPrinterInstalled(string) Determines whether [is printer installed] [the specified printer name]. Declaration public static bool IsPrinterInstalled(string printerName) Parameters Type Name Description string printerName Name of the printer. Returns Type Description bool true if [is printer installed] [the specified printer name]; otherwise, false. | Improve this Doc View Source RenamePrinter(string, string) Renames the printer. Declaration public static void RenamePrinter(string printerName, string newName) Parameters Type Name Description string printerName Name of the printer. string newName The new name. | Improve this Doc View Source SetDefaultPrinter(string) Sets the default printer. Declaration public static void SetDefaultPrinter(string printerName) Parameters Type Name Description string printerName Name of the printer."
   },
-  "api/Environs.html": {
-    "href": "api/Environs.html",
-    "title": "Namespace Environs | Environs API Reference",
-    "keywords": "Namespace Environs Classes AuthenticationOptions Authentication options CommonClasses Common WMI classes Environment WMI environment query helper IPAddressExtensions IP address extension methods"
+  "api/Environs.HelperClasses.html": {
+    "href": "api/Environs.HelperClasses.html",
+    "title": "Namespace Environs.HelperClasses | Environs API Reference",
+    "keywords": "Namespace Environs.HelperClasses Classes Applications Applications helpers NetworkHelper Helper methods for network related items. PrinterManager Printer manager"
   },
   "api/Environs.IPAddressExtensions.html": {
     "href": "api/Environs.IPAddressExtensions.html",
@@ -58,6 +53,11 @@
     "href": "api/Environs.LDAP.html",
     "title": "Namespace Environs.LDAP | Environs API Reference",
     "keywords": "Namespace Environs.LDAP Classes Directory LDAP Directory helper Entry LDAP entry"
+  },
+  "api/Environs.html": {
+    "href": "api/Environs.html",
+    "title": "Namespace Environs | Environs API Reference",
+    "keywords": "Namespace Environs Classes AuthenticationOptions Authentication options CommonClasses Common WMI classes Environment WMI environment query helper IPAddressExtensions IP address extension methods"
   },
   "api/index.html": {
     "href": "api/index.html",
