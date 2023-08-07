@@ -2,6 +2,23 @@
 
 All notable changes to this project will be documented in this file. See [versionize](https://github.com/versionize/versionize) for commit guidelines.
 
+<a name="2.0.4"></a>
+## [2.0.4](https://www.github.com/JaCraig/Environs/releases/tag/v2.0.4) (2023-8-7)
+
+### Bug Fixes
+
+* bump the dependencies group with 1 update ([b3ca9a7](https://www.github.com/JaCraig/Environs/commit/b3ca9a7bf4018e0b0efbc0bd5155975900ec0aec))
+
+### Other
+
+* Merge pull request #3 from JaCraig/dependabot/github_actions/dependencies-0717129e0a ([d9dabbc](https://www.github.com/JaCraig/Environs/commit/d9dabbcf1535b0359bc176be91775189eb4a40e5))
+* Merge pull request #4 from JaCraig/dependabot/nuget/dependencies-5bd43afe2e ([bd2a2d5](https://www.github.com/JaCraig/Environs/commit/bd2a2d50569af45c8f1c4e43c5363d8ee9dad071))
+* Adding editorconfig ([0f73525](https://www.github.com/JaCraig/Environs/commit/0f73525ad61406ac88d8af4c8f3be1399e2e1a43))
+* bump the dependencies group with 2 updates ([adea41f](https://www.github.com/JaCraig/Environs/commit/adea41ff37897b8da857f3fd61f0c2db3ca69421))
+* dependabot update ([f0b3b53](https://www.github.com/JaCraig/Environs/commit/f0b3b533d716176f906ab2162444664366f77ef0))
+* Update dependabot.yml ([8eb228f](https://www.github.com/JaCraig/Environs/commit/8eb228f868bc56f456541b14fe406556146a30e9))
+* Update dependabot.yml ([1ad631e](https://www.github.com/JaCraig/Environs/commit/1ad631e10bf458ef97019e05ed91e3a0663110b2))
+
 <a name="2.0.3"></a>
 ## [2.0.3](https://www.github.com/JaCraig/Environs/releases/tag/v2.0.3) (2023-7-9)
 
