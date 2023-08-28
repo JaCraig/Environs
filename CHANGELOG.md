@@ -2,6 +2,21 @@
 
 All notable changes to this project will be documented in this file. See [versionize](https://github.com/versionize/versionize) for commit guidelines.
 
+<a name="2.0.5"></a>
+## [2.0.5](https://www.github.com/JaCraig/Environs/releases/tag/v2.0.5) (2023-8-28)
+
+### Bug Fixes
+
+* bump the dependencies group with 1 update ([7c348a0](https://www.github.com/JaCraig/Environs/commit/7c348a0f01a2a9dc166d8015f6b21b5af1a8eade))
+
+### Other
+
+* Merge pull request #5 from JaCraig/dependabot/nuget/Environs.Tests/dependencies-7c5f3fc8cd ([c9784d1](https://www.github.com/JaCraig/Environs/commit/c9784d106dd20307c0a3a42cb7839971d3ccb3f2))
+* Merge pull request #6 from JaCraig/dependabot/nuget/dependencies-f6edfbdd22 ([fcfae9f](https://www.github.com/JaCraig/Environs/commit/fcfae9f3ebbf0ddd823a07b4f367be41c5c0d09a))
+* bump the dependencies group in /Environs.Tests with 1 update ([d421bc4](https://www.github.com/JaCraig/Environs/commit/d421bc41b5701481e74bb134a7b6f24193d41c1e))
+* Update dependabot.yml ([00015ab](https://www.github.com/JaCraig/Environs/commit/00015ab2321fb456003ac8753ec427d2473b0648))
+* Update dependabot.yml ([a8e560e](https://www.github.com/JaCraig/Environs/commit/a8e560e6ae87df8900382bbaf7f3c3cdf460ba24))
+
 <a name="2.0.4"></a>
 ## [2.0.4](https://www.github.com/JaCraig/Environs/releases/tag/v2.0.4) (2023-8-7)
 
