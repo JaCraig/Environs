@@ -2,6 +2,20 @@
 
 All notable changes to this project will be documented in this file. See [versionize](https://github.com/versionize/versionize) for commit guidelines.
 
+<a name="2.0.8"></a>
+## [2.0.8](https://www.github.com/JaCraig/Environs/releases/tag/v2.0.8) (2023-9-13)
+
+### Bug Fixes
+
+* bump the dependencies group with 1 update ([0b1f42a](https://www.github.com/JaCraig/Environs/commit/0b1f42ae6c5287cf6ec96b9d95673c183fca8c8b))
+
+### Other
+
+* Merge pull request #10 from JaCraig/dependabot/github_actions/dependencies-8a9da2b879 ([cfc32e8](https://www.github.com/JaCraig/Environs/commit/cfc32e879bf9eefd978512ec6acc30aef8e77cf3))
+* Merge pull request #11 from JaCraig/dependabot/nuget/dependencies-fc06aedbc4 ([89275b1](https://www.github.com/JaCraig/Environs/commit/89275b1947480f465a4a1c493860c5101090805c))
+* bump the dependencies group with 1 update ([7a31b75](https://www.github.com/JaCraig/Environs/commit/7a31b75b61ef4b9b5671f2c973ba97cda0e1382e))
+* Update dependabot.yml ([d51be47](https://www.github.com/JaCraig/Environs/commit/d51be479c3dafc87492e3c01cfb843f5b813f118))
+
 <a name="2.0.7"></a>
 ## [2.0.7](https://www.github.com/JaCraig/Environs/releases/tag/v2.0.7) (2023-9-4)
 
