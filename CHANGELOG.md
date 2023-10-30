@@ -2,6 +2,24 @@
 
 All notable changes to this project will be documented in this file. See [versionize](https://github.com/versionize/versionize) for commit guidelines.
 
+<a name="2.0.10"></a>
+## [2.0.10](https://www.github.com/JaCraig/Environs/releases/tag/v2.0.10) (2023-10-30)
+
+### Bug Fixes
+
+* bump the dependencies group with 1 update ([2784fb6](https://www.github.com/JaCraig/Environs/commit/2784fb6cb04ca873669c869db89f6caf44ce08b4))
+
+### Other
+
+* Merge pull request #14 from JaCraig/dependabot/github_actions/dependencies-4c9eee5d7b ([ec4a526](https://www.github.com/JaCraig/Environs/commit/ec4a526e1e6b1ff38f52f8d362d7fd3dbb3153dd))
+* Merge pull request #15 from JaCraig/dependabot/nuget/Environs.Tests/dependencies-6c13c55ef1 ([41242f1](https://www.github.com/JaCraig/Environs/commit/41242f1d702f67c6432a7ac231fcf034169e4fc7))
+* Merge pull request #16 from JaCraig/dependabot/nuget/Environs.Tests/dependencies-e05608af98 ([47ac734](https://www.github.com/JaCraig/Environs/commit/47ac734c2bf05047a5b5c29ab24efd94a80f854e))
+* Merge pull request #17 from JaCraig/dependabot/nuget/dependencies-8a9d3d7377 ([a1afd7b](https://www.github.com/JaCraig/Environs/commit/a1afd7ba10f157a0a8562a0ca6b62832f599dd05))
+* bump the dependencies group in /Environs.Tests with 1 update ([9000d0b](https://www.github.com/JaCraig/Environs/commit/9000d0b749a9b7489973b44ed952028f325b5f85))
+* bump the dependencies group in /Environs.Tests with 2 updates ([02a69c8](https://www.github.com/JaCraig/Environs/commit/02a69c8542f142742ae6b533092dcdc76248cd90))
+* bump the dependencies group with 1 update ([ab2fd67](https://www.github.com/JaCraig/Environs/commit/ab2fd6775c1879c8166cf03c51fcb8f454ee5a65))
+* Fixing pull request testing ([518984c](https://www.github.com/JaCraig/Environs/commit/518984ce8503a9ee41a5a98b9ee43e087de667bf))
+
 <a name="2.0.9"></a>
 ## [2.0.9](https://www.github.com/JaCraig/Environs/releases/tag/v2.0.9) (2023-09-18)
 
