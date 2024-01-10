@@ -2,6 +2,36 @@
 
 All notable changes to this project will be documented in this file. See [versionize](https://github.com/versionize/versionize) for commit guidelines.
 
+<a name="2.0.13"></a>
+## [2.0.13](https://www.github.com/JaCraig/Environs/releases/tag/v2.0.13) (2024-01-10)
+
+### Bug Fixes
+
+* bump the dependencies group with 1 update ([a6a34cc](https://www.github.com/JaCraig/Environs/commit/a6a34ccfcf1e8e1c5605dfb0927446fea8937c37))
+
+### Other
+
+* Merge pull request #23 from JaCraig/dependabot/nuget/Environs.Tests/dependencies-5afb318d15 ([b554169](https://www.github.com/JaCraig/Environs/commit/b5541696ccc97c1f31caa3157a5b41d8ff4eccef))
+* Merge pull request #24 from JaCraig/dependabot/github_actions/dependencies-9d15ffb50c ([f5ceed9](https://www.github.com/JaCraig/Environs/commit/f5ceed962c5b72bf18cb69347b4a04618e150a49))
+* Merge pull request #25 from JaCraig/dependabot/nuget/Environs.Tests/dependencies-9380cae661 ([477b8b9](https://www.github.com/JaCraig/Environs/commit/477b8b9a1fbf635870d0360ca547cade8d25110b))
+* Merge pull request #26 from JaCraig/dependabot/nuget/Environs.Tests/dependencies-beb0c94413 ([33ed5c3](https://www.github.com/JaCraig/Environs/commit/33ed5c3052612081ac0eab5cc2fe11075f69568f))
+* Merge pull request #27 from JaCraig/dependabot/github_actions/dependencies-cac7d13037 ([63e3e36](https://www.github.com/JaCraig/Environs/commit/63e3e36c0ad5c1d404bbeb693b4d7e0d0a11eaef))
+* Merge pull request #28 from JaCraig/dependabot/github_actions/dependencies-cb1dee63db ([5738835](https://www.github.com/JaCraig/Environs/commit/5738835f952323277abf5917b5433de744c1ea01))
+* Merge pull request #29 from JaCraig/dependabot/nuget/Environs.Tests/dependencies-07b50e7d0d ([01a8044](https://www.github.com/JaCraig/Environs/commit/01a8044ba7d06e23a3c3ebf4810e1b53931b9281))
+* Merge pull request #30 from JaCraig/dependabot/nuget/Environs.Tests/dependencies-d1d83f71e9 ([d12399a](https://www.github.com/JaCraig/Environs/commit/d12399a8fe12ee2ad0221610e236590d5eaca7aa))
+* Merge pull request #31 from JaCraig/dependabot/nuget/Environs.Tests/dependencies-970de2ab38 ([bc0b686](https://www.github.com/JaCraig/Environs/commit/bc0b686d0e143567b914c1b17c627b6d8130cf0a))
+* Merge pull request #32 from JaCraig/dependabot/nuget/dependencies-92e5c68c62 ([a5b5acb](https://www.github.com/JaCraig/Environs/commit/a5b5acb2fdbff91fecaa5cee109523b66f4240b6))
+* bump the dependencies group in /Environs.Tests with 1 update ([d202510](https://www.github.com/JaCraig/Environs/commit/d202510b19ff6dd1e078ebe848303118f27348ad))
+* bump the dependencies group in /Environs.Tests with 1 update ([c9a9517](https://www.github.com/JaCraig/Environs/commit/c9a951747b93f7e5ea1148b96d0dc0b8b9ccd047))
+* bump the dependencies group in /Environs.Tests with 1 update ([9c7be52](https://www.github.com/JaCraig/Environs/commit/9c7be52383a4ffdc51da2b7bfae52e695cc1461c))
+* bump the dependencies group in /Environs.Tests with 2 updates ([70be869](https://www.github.com/JaCraig/Environs/commit/70be86965f6799f5300aedce18e48a16a3a76f79))
+* bump the dependencies group in /Environs.Tests with 2 updates ([7fd71c2](https://www.github.com/JaCraig/Environs/commit/7fd71c2f575bb4757c5dd1b9bd6a95027c0da0e7))
+* bump the dependencies group in /Environs.Tests with 2 updates ([0433092](https://www.github.com/JaCraig/Environs/commit/0433092a4a2706056fe5e2b9daf1a35896d88eae))
+* bump the dependencies group with 1 update ([16f1d1e](https://www.github.com/JaCraig/Environs/commit/16f1d1e6fdaea587549310c22c373b42f7457fe0))
+* bump the dependencies group with 1 update ([110fe47](https://www.github.com/JaCraig/Environs/commit/110fe472532e7c943988187ea2ce9ad2fbc1763c))
+* bump the dependencies group with 1 update ([7d89f47](https://www.github.com/JaCraig/Environs/commit/7d89f47fa07ebe7c363b271551ea96f49c7f1a1a))
+* Fixing doc gen ([491844b](https://www.github.com/JaCraig/Environs/commit/491844bebbe23ff9b538d580188c87a1bdd9c49f))
+
 <a name="2.0.12"></a>
 ## [2.0.12](https://www.github.com/JaCraig/Environs/releases/tag/v2.0.12) (2023-11-16)
 
