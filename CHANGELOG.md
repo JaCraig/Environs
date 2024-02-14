@@ -2,6 +2,22 @@
 
 All notable changes to this project will be documented in this file. See [versionize](https://github.com/versionize/versionize) for commit guidelines.
 
+<a name="2.0.14"></a>
+## [2.0.14](https://www.github.com/JaCraig/Environs/releases/tag/v2.0.14) (2024-02-14)
+
+### Bug Fixes
+
+* bump the dependencies group with 1 update ([45fb8ce](https://www.github.com/JaCraig/Environs/commit/45fb8cee7f0f380240dc076e6d71e8c7a79f25f0))
+
+### Other
+
+* Merge pull request #33 from JaCraig/dependabot/nuget/Environs.Tests/dependencies-667f223b7b ([9b3e68d](https://www.github.com/JaCraig/Environs/commit/9b3e68d9fb252b46ff57259dc60ea96fb5fdcdef))
+* Merge pull request #34 from JaCraig/dependabot/nuget/Environs.Tests/dependencies-dd5dd83d2f ([79d7416](https://www.github.com/JaCraig/Environs/commit/79d74160a4338f702fb59b8001c6edb952e79a11))
+* Merge pull request #35 from JaCraig/dependabot/nuget/dependencies-113d486314 ([f69d1f9](https://www.github.com/JaCraig/Environs/commit/f69d1f9e15b07686b660d0c993fefdbda638da46))
+* bump the dependencies group in /Environs.Tests with 1 update ([e43068b](https://www.github.com/JaCraig/Environs/commit/e43068bafa4c87d7052d7f97c55a18399bcee8d0))
+* bump the dependencies group in /Environs.Tests with 1 update ([989ed32](https://www.github.com/JaCraig/Environs/commit/989ed320bbe26161dedb29d36a90480ee52fe8df))
+* Update dependabot-reviewer.yml ([0927c20](https://www.github.com/JaCraig/Environs/commit/0927c2014b15a0b41cb8075f938d3187fe8dc13c))
+
 <a name="2.0.13"></a>
 ## [2.0.13](https://www.github.com/JaCraig/Environs/releases/tag/v2.0.13) (2024-01-10)
 
