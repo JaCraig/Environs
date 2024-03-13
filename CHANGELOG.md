@@ -2,6 +2,17 @@
 
 All notable changes to this project will be documented in this file. See [versionize](https://github.com/versionize/versionize) for commit guidelines.
 
+<a name="2.0.16"></a>
+## [2.0.16](https://www.github.com/JaCraig/Environs/releases/tag/v2.0.16) (2024-03-13)
+
+### Bug Fixes
+
+* bump the dependencies group with 1 update ([453becb](https://www.github.com/JaCraig/Environs/commit/453becb428661b0b7986020d35e7f499d6b3e9df))
+
+### Other
+
+* Merge pull request #39 from JaCraig/dependabot/nuget/dependencies-05a1af40ce ([5f4effe](https://www.github.com/JaCraig/Environs/commit/5f4effe01574a2467e7c0b72670a69bf324aeb48))
+
 <a name="2.0.15"></a>
 ## [2.0.15](https://www.github.com/JaCraig/Environs/releases/tag/v2.0.15) (2024-03-04)
 
