@@ -2,6 +2,21 @@
 
 All notable changes to this project will be documented in this file. See [versionize](https://github.com/versionize/versionize) for commit guidelines.
 
+<a name="2.0.17"></a>
+## [2.0.17](https://www.github.com/JaCraig/Environs/releases/tag/v2.0.17) (2024-04-10)
+
+### Bug Fixes
+
+* bump Microsoft.Windows.Compatibility in the dependencies group ([f826665](https://www.github.com/JaCraig/Environs/commit/f826665a9d3081eae6bab7ba1df94b74481fb034))
+
+### Other
+
+* Merge pull request #40 from JaCraig/dependabot/github_actions/dependencies-c3ed15e864 ([f95c388](https://www.github.com/JaCraig/Environs/commit/f95c388f2b7bdacf795ace40d6e0dd18318f6d2f))
+* Merge pull request #41 from JaCraig/dependabot/github_actions/dependencies-45223d3826 ([c17cd65](https://www.github.com/JaCraig/Environs/commit/c17cd65f67932320b7bd3e7c2fa5bcb625112450))
+* Merge pull request #42 from JaCraig/dependabot/nuget/dependencies-69eaec3364 ([881f249](https://www.github.com/JaCraig/Environs/commit/881f24904afaedd68747aced2c5b0ad9fdba1031))
+* bump peaceiris/actions-gh-pages in the dependencies group ([1f0042f](https://www.github.com/JaCraig/Environs/commit/1f0042f74c784e86359ad126dc38f0a506ddc126))
+* bump the dependencies group with 1 update ([a705362](https://www.github.com/JaCraig/Environs/commit/a705362a1deb30c9852ac8728a697be51f9c53d6))
+
 <a name="2.0.16"></a>
 ## [2.0.16](https://www.github.com/JaCraig/Environs/releases/tag/v2.0.16) (2024-03-13)
 
