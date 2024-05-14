@@ -2,6 +2,17 @@
 
 All notable changes to this project will be documented in this file. See [versionize](https://github.com/versionize/versionize) for commit guidelines.
 
+<a name="2.0.21"></a>
+## [2.0.21](https://www.github.com/JaCraig/Environs/releases/tag/v2.0.21) (2024-05-14)
+
+### Bug Fixes
+
+* bump Microsoft.Windows.Compatibility in the dependencies group ([4c69d6f](https://www.github.com/JaCraig/Environs/commit/4c69d6fc6ebdba5618ec0fd2b4854d5b45960ce8))
+
+### Other
+
+* Merge pull request #49 from JaCraig/dependabot/nuget/dependencies-b6cb2ba3ac ([e04e0a9](https://www.github.com/JaCraig/Environs/commit/e04e0a903f7086ef0be91f6d60be8ce763faba35))
+
 <a name="2.0.20"></a>
 ## [2.0.20](https://www.github.com/JaCraig/Environs/releases/tag/v2.0.20) (2024-05-06)
 
