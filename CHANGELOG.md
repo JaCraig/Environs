@@ -2,6 +2,21 @@
 
 All notable changes to this project will be documented in this file. See [versionize](https://github.com/versionize/versionize) for commit guidelines.
 
+<a name="2.0.22"></a>
+## [2.0.22](https://www.github.com/JaCraig/Environs/releases/tag/v2.0.22) (2024-05-29)
+
+### Bug Fixes
+
+* bump Microsoft.Windows.Compatibility in the dependencies group ([a9d752a](https://www.github.com/JaCraig/Environs/commit/a9d752a7177f6fc48b28d949cd074599c2571bed))
+
+### Other
+
+* Merge pull request #50 from JaCraig/dependabot/nuget/Environs.Tests/dependencies-d10d8338a5 ([1d42ac5](https://www.github.com/JaCraig/Environs/commit/1d42ac5cc7a9b77864eebf7663465ca85059c568))
+* Merge pull request #51 from JaCraig/dependabot/nuget/Environs.Tests/dependencies-63bf006411 ([36b1936](https://www.github.com/JaCraig/Environs/commit/36b1936d89600092e2dfd3e9f5b8bb0f78aad84e))
+* Merge pull request #52 from JaCraig/dependabot/nuget/dependencies-bfc76aab9d ([5cc1614](https://www.github.com/JaCraig/Environs/commit/5cc1614abbccb4271bcdb4a30a70a7649e2017ca))
+* bump Microsoft.NET.Test.Sdk ([2516f39](https://www.github.com/JaCraig/Environs/commit/2516f396129619d8205ccd9f95782d05d14d6c5d))
+* bump the dependencies group in /Environs.Tests with 2 updates ([3fdca35](https://www.github.com/JaCraig/Environs/commit/3fdca352c77e835bed831d733a06934f35e3a16c))
+
 <a name="2.0.21"></a>
 ## [2.0.21](https://www.github.com/JaCraig/Environs/releases/tag/v2.0.21) (2024-05-14)
 
