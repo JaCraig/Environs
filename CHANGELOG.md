@@ -2,6 +2,22 @@
 
 All notable changes to this project will be documented in this file. See [versionize](https://github.com/versionize/versionize) for commit guidelines.
 
+<a name="2.0.24"></a>
+## [2.0.24](https://www.github.com/JaCraig/Environs/releases/tag/v2.0.24) (2024-07-10)
+
+### Bug Fixes
+
+* bump Microsoft.Windows.Compatibility in the dependencies group ([25ecaba](https://www.github.com/JaCraig/Environs/commit/25ecaba80d2cd46aaf8e3e7c937415e44735b05f))
+
+### Other
+
+* Merge pull request #54 from JaCraig/dependabot/github_actions/dependencies-c44bf69c3e ([d0b4772](https://www.github.com/JaCraig/Environs/commit/d0b47725a22df7d8f8a68b5fc9a23766f63ca706))
+* Merge pull request #55 from JaCraig/dependabot/nuget/Environs.Tests/dependencies-8e312df114 ([19b2bd6](https://www.github.com/JaCraig/Environs/commit/19b2bd66967205511857c55a06a484bb43ed04a1))
+* Merge pull request #56 from JaCraig/dependabot/nuget/dependencies-21501c7b64 ([b87b714](https://www.github.com/JaCraig/Environs/commit/b87b714c31a4e82e44e463aad8608e78df3b1eeb))
+* bump dependabot/fetch-metadata in the dependencies group ([ba5e16e](https://www.github.com/JaCraig/Environs/commit/ba5e16e18c5a2549043edccb73aec03889f93496))
+* bump the dependencies group in /Environs.Tests with 2 updates ([d6e7d3d](https://www.github.com/JaCraig/Environs/commit/d6e7d3d96216277c0d665228e063f4e12ed47734))
+* Update dotnet-test.yml ([cd0522e](https://www.github.com/JaCraig/Environs/commit/cd0522eea754c9c591e0540bf2520497cde7c5df))
+
 <a name="2.0.23"></a>
 ## [2.0.23](https://www.github.com/JaCraig/Environs/releases/tag/v2.0.23) (2024-06-17)
 
