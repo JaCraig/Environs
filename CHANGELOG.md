@@ -2,6 +2,25 @@
 
 All notable changes to this project will be documented in this file. See [versionize](https://github.com/versionize/versionize) for commit guidelines.
 
+<a name="2.0.26"></a>
+## [2.0.26](https://www.github.com/JaCraig/Environs/releases/tag/v2.0.26) (2024-10-09)
+
+### Bug Fixes
+
+* bump Microsoft.Windows.Compatibility in the dependencies group ([4049beb](https://www.github.com/JaCraig/Environs/commit/4049beb4ec3cc78787b5500abbcc53b8c42624e6))
+
+### Other
+
+* Merge pull request #59 from JaCraig/dependabot/nuget/Environs.Tests/dependencies-20452041bf ([f7fbcfb](https://www.github.com/JaCraig/Environs/commit/f7fbcfbbed33aa1eb77970cf4bd187d9966aa880))
+* Merge pull request #60 from JaCraig/dependabot/nuget/Environs.Tests/dependencies-78c52a00e0 ([77ae2c9](https://www.github.com/JaCraig/Environs/commit/77ae2c99a1dc507bb3bddd5bbb87af8723178d7d))
+* Merge pull request #61 from JaCraig/dependabot/nuget/Environs.Tests/dependencies-e833257e60 ([3baedf2](https://www.github.com/JaCraig/Environs/commit/3baedf26925480b0e336bd4d25fc9c24a9837b79))
+* Merge pull request #62 from JaCraig/dependabot/nuget/Environs.Tests/dependencies-799ab3113c ([c825618](https://www.github.com/JaCraig/Environs/commit/c825618ec19227fba7270e269e0eaef6dcf878bd))
+* Merge pull request #63 from JaCraig/dependabot/nuget/dependencies-3430b64c5c ([f47f5d2](https://www.github.com/JaCraig/Environs/commit/f47f5d2b46289586ff2cc08935178f06768fbf75))
+* bump Microsoft.NET.Test.Sdk ([f44bb78](https://www.github.com/JaCraig/Environs/commit/f44bb78b761b4b1ec56a33d55e2523b805765768))
+* bump Microsoft.NET.Test.Sdk ([a2df09b](https://www.github.com/JaCraig/Environs/commit/a2df09b2370b2f9c78795c6af312cec4532afdcd))
+* bump xunit in /Environs.Tests in the dependencies group ([d390d51](https://www.github.com/JaCraig/Environs/commit/d390d5194c502cea991b70271195d48d5d23aa28))
+* bump xunit in /Environs.Tests in the dependencies group ([07c5535](https://www.github.com/JaCraig/Environs/commit/07c553539b78a7c5f4cd17db8d0815a953839466))
+
 <a name="2.0.25"></a>
 ## [2.0.25](https://www.github.com/JaCraig/Environs/releases/tag/v2.0.25) (2024-08-14)
 

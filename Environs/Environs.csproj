@@ -11,7 +11,7 @@
     <Description>Environs is a small C# library that provides a simplified interface for working with Windows Management Instrumentation (WMI), Lightweight Directory Access Protocol (LDAP), and related functionality. It aims to make it easier to perform common operations and tasks in these areas without the need for extensive knowledge of the underlying protocols and APIs.</Description>
     <Copyright>Copyright © James Craig 2017</Copyright>
     <PackageTags>wmi;ldap;Windows Management Instrumentation;Lightweight Directory Access Protocol;System Management</PackageTags>
-    <Version>2.0.25</Version>
+    <Version>2.0.26</Version>
     <Title>Environs</Title>
     <PackageIcon>Icon.png</PackageIcon>
     <PackageReadmeFile>README.md</PackageReadmeFile>
