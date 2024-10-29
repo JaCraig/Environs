@@ -2,6 +2,23 @@
 
 All notable changes to this project will be documented in this file. See [versionize](https://github.com/versionize/versionize) for commit guidelines.
 
+<a name="2.0.27"></a>
+## [2.0.27](https://www.github.com/JaCraig/Environs/releases/tag/v2.0.27) (2024-10-29)
+
+### Bug Fixes
+
+* bump versionize from 1.27.0 to 2.0.0 in the dependencies group ([e0c2463](https://www.github.com/JaCraig/Environs/commit/e0c2463fa2df8fb113965d4fff58d9e654f1e70f))
+* bump versionize from 2.0.0 to 2.1.0 in the dependencies group ([e7f8448](https://www.github.com/JaCraig/Environs/commit/e7f844835e9d90fb10a018d6d2ecd8e6546d2428))
+
+### Other
+
+* Merge pull request #64 from JaCraig/dependabot/nuget/dependencies-9c36df7c76 ([b99bca1](https://www.github.com/JaCraig/Environs/commit/b99bca192b27b6c0b57db463ff4c8c9bd13472c1))
+* Merge pull request #65 from JaCraig/dependabot/nuget/dependencies-3894128c1d ([59bdb64](https://www.github.com/JaCraig/Environs/commit/59bdb6489c388fe74332c503a10e49416be20e5e))
+* Merge pull request #66 from JaCraig/dependabot/github_actions/dependencies-18190d55f2 ([2ec292c](https://www.github.com/JaCraig/Environs/commit/2ec292c649fcd18b046274502079882fc9f36ab5))
+* bump actions/setup-dotnet in the dependencies group ([0f12eed](https://www.github.com/JaCraig/Environs/commit/0f12eed5dba5d2b31e2a0e6c15fce2c44bf483aa))
+* Merge branch 'master' of https://github.com/JaCraig/Environs ([1a9ca6f](https://www.github.com/JaCraig/Environs/commit/1a9ca6fc7f22d6fa832f49f89a580c9882e3b7b7))
+* Refactor versionize command in dotnet-publish.yml ([28ddf07](https://www.github.com/JaCraig/Environs/commit/28ddf07aaf683cbb28ac4d063a78b757090c2e50))
+
 <a name="2.0.26"></a>
 ## [2.0.26](https://www.github.com/JaCraig/Environs/releases/tag/v2.0.26) (2024-10-09)
 
