@@ -1,5 +1,5 @@
 ﻿using Environs.HelperClasses;
-using System.Linq;
+using System;
 using Xunit;
 
 namespace Environs.Tests.HelperClasses
@@ -9,7 +9,11 @@ namespace Environs.Tests.HelperClasses
         [Fact]
         public void GetInstalledApplications()
         {
-            var Results = Applications.GetInstalledApplications();
+            if (!OperatingSystem.IsWindows())
+            {
+                throw Xunit.Sdk.SkipException.ForSkip("This test only runs on Windows.");
+            }
+            System.Collections.Generic.IEnumerable<string> Results = Applications.GetInstalledApplications();
             Assert.NotEmpty(Results);
         }
     }

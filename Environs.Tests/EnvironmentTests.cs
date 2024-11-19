@@ -1,4 +1,5 @@
-﻿using System.Linq;
+﻿using System;
+using System.Linq;
 using Xunit;
 
 namespace Environs.Tests
@@ -8,8 +9,12 @@ namespace Environs.Tests
         [Fact]
         public void BiosExecute()
         {
+            if (!OperatingSystem.IsWindows())
+            {
+                throw Xunit.Sdk.SkipException.ForSkip("This test only runs on Windows.");
+            }
             var TestObject = new Environment();
-            var Results = TestObject.Execute(CommonClasses.Bios);
+            System.Collections.Generic.IEnumerable<dynamic> Results = TestObject.Execute(CommonClasses.Bios);
             Assert.Single(Results);
             Assert.NotEmpty(Results.First().Manufacturer);
         }
@@ -17,6 +22,10 @@ namespace Environs.Tests
         [Fact]
         public void Creation()
         {
+            if (!OperatingSystem.IsWindows())
+            {
+                throw Xunit.Sdk.SkipException.ForSkip("This test only runs on Windows.");
+            }
             var TestObject = new Environment();
             Assert.Contains("cimv2", TestObject.Namespaces);
             Assert.Equal("localhost", TestObject.Server);
@@ -25,8 +34,12 @@ namespace Environs.Tests
         [Fact]
         public void OperatingSystemExecute()
         {
+            if (!OperatingSystem.IsWindows())
+            {
+                throw Xunit.Sdk.SkipException.ForSkip("This test only runs on Windows.");
+            }
             var TestObject = new Environment();
-            var Results = TestObject.Execute(CommonClasses.OperatingSystem);
+            System.Collections.Generic.IEnumerable<dynamic> Results = TestObject.Execute(CommonClasses.OperatingSystem);
             Assert.Single(Results);
             Assert.NotEmpty(Results.First().CSName);
         }
@@ -34,10 +47,14 @@ namespace Environs.Tests
         [Fact]
         public void QueryExecute()
         {
+            if (!OperatingSystem.IsWindows())
+            {
+                throw Xunit.Sdk.SkipException.ForSkip("This test only runs on Windows.");
+            }
             var TestObject = new Environment();
-            var Results = TestObject.Execute("SELECT * FROM Win32_LoggedOnUser");
+            System.Management.ManagementObjectCollection Results = TestObject.Execute("SELECT * FROM Win32_LoggedOnUser");
             Assert.NotEmpty(Results);
-            foreach (var Object in Results)
+            foreach (System.Management.ManagementBaseObject Object in Results)
             {
                 Assert.NotEmpty(Object["Antecedent"].ToString());
             }
