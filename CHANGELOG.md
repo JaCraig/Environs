@@ -2,6 +2,24 @@
 
 All notable changes to this project will be documented in this file. See [versionize](https://github.com/versionize/versionize) for commit guidelines.
 
+<a name="3.0.0"></a>
+## [3.0.0](https://www.github.com/JaCraig/Environs/releases/tag/v3.0.0) (2024-11-19)
+
+### Features
+
+* Update workflows and target frameworks ([8674c5d](https://www.github.com/JaCraig/Environs/commit/8674c5df2382be45ddc5e0980ca281a9ddf5ecd2))
+
+### Bug Fixes
+
+* Add OS checks and specify types in test files ([2c06013](https://www.github.com/JaCraig/Environs/commit/2c06013015e662701a20c9f7cfc9639d23099344))
+* Fixing tests ([82ea653](https://www.github.com/JaCraig/Environs/commit/82ea65385700a64fb50f98b3b52f554d39370e88))
+* update coveralls upload path and test filter in workflow ([7352284](https://www.github.com/JaCraig/Environs/commit/735228433da70ef8bd3614578a87752e00e8c411))
+* Update package versions in Environs.csproj ([3e33df6](https://www.github.com/JaCraig/Environs/commit/3e33df638db1124683ba2ef451d9c7c79035113d))
+
+### Breaking Changes
+
+* Update workflows and target frameworks ([8674c5d](https://www.github.com/JaCraig/Environs/commit/8674c5df2382be45ddc5e0980ca281a9ddf5ecd2))
+
 <a name="2.0.29"></a>
 ## [2.0.29](https://www.github.com/JaCraig/Environs/releases/tag/v2.0.29) (2024-11-11)
 
