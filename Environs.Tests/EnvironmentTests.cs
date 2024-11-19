@@ -11,7 +11,7 @@ namespace Environs.Tests
         {
             if (!OperatingSystem.IsWindows())
             {
-                throw Xunit.Sdk.SkipException.ForSkip("This test only runs on Windows.");
+                return;
             }
             var TestObject = new Environment();
             System.Collections.Generic.IEnumerable<dynamic> Results = TestObject.Execute(CommonClasses.Bios);
@@ -24,7 +24,7 @@ namespace Environs.Tests
         {
             if (!OperatingSystem.IsWindows())
             {
-                throw Xunit.Sdk.SkipException.ForSkip("This test only runs on Windows.");
+                return;
             }
             var TestObject = new Environment();
             Assert.Contains("cimv2", TestObject.Namespaces);
@@ -36,7 +36,7 @@ namespace Environs.Tests
         {
             if (!OperatingSystem.IsWindows())
             {
-                throw Xunit.Sdk.SkipException.ForSkip("This test only runs on Windows.");
+                return;
             }
             var TestObject = new Environment();
             System.Collections.Generic.IEnumerable<dynamic> Results = TestObject.Execute(CommonClasses.OperatingSystem);
@@ -49,7 +49,7 @@ namespace Environs.Tests
         {
             if (!OperatingSystem.IsWindows())
             {
-                throw Xunit.Sdk.SkipException.ForSkip("This test only runs on Windows.");
+                return;
             }
             var TestObject = new Environment();
             System.Management.ManagementObjectCollection Results = TestObject.Execute("SELECT * FROM Win32_LoggedOnUser");

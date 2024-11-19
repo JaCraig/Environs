@@ -11,7 +11,7 @@ namespace Environs.Tests.HelperClasses
         {
             if (!OperatingSystem.IsWindows())
             {
-                throw Xunit.Sdk.SkipException.ForSkip("This test only runs on Windows.");
+                return;
             }
             System.Collections.Generic.IEnumerable<string> Results = Applications.GetInstalledApplications();
             Assert.NotEmpty(Results);
