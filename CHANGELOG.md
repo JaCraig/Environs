@@ -2,6 +2,19 @@
 
 All notable changes to this project will be documented in this file. See [versionize](https://github.com/versionize/versionize) for commit guidelines.
 
+<a name="3.0.1"></a>
+## [3.0.1](https://www.github.com/JaCraig/Environs/releases/tag/v3.0.1) (2024-11-27)
+
+### Bug Fixes
+
+* Update husky and versionize tool versions in dotnet-tools.json ([5017f1d](https://www.github.com/JaCraig/Environs/commit/5017f1d2229790547aaed38051964d165dd4bc0e))
+
+### Other
+
+* Merge pull request #73 from JaCraig/dependabot/nuget/Environs.Tests/dependencies-617062173c ([46ecab5](https://www.github.com/JaCraig/Environs/commit/46ecab57b9aaaa692b8b0ee85797e16491ba4e83))
+* bump Microsoft.NET.Test.Sdk ([cb01170](https://www.github.com/JaCraig/Environs/commit/cb011705a4dd8d4eed852dd71ab34002dc82d6de))
+* Merge branch 'master' of https://github.com/JaCraig/Environs ([2b4fe85](https://www.github.com/JaCraig/Environs/commit/2b4fe85edfef1dd4614d4ed5d290965799fbdfde))
+
 <a name="3.0.0"></a>
 ## [3.0.0](https://www.github.com/JaCraig/Environs/releases/tag/v3.0.0) (2024-11-19)
 
