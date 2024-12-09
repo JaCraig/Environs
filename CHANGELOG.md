@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file. See [versionize](https://github.com/versionize/versionize) for commit guidelines.
 
+<a name="3.0.2"></a>
+## [3.0.2](https://www.github.com/JaCraig/Environs/releases/tag/v3.0.2) (2024-12-09)
+
+### Bug Fixes
+
+* bump husky in /Environs in the dependencies group ([a5f0dc5](https://www.github.com/JaCraig/Environs/commit/a5f0dc5a40d664adc0c8f90751c5be323631ccd2))
+
+### Other
+
+* Merge pull request #74 from JaCraig/dependabot/nuget/Environs/dependencies-0eb5dce03c ([39717fa](https://www.github.com/JaCraig/Environs/commit/39717fa8408bc5f6e0db4733cebff1f5bbf38af5))
+* Update dependabot.yml ([2a95643](https://www.github.com/JaCraig/Environs/commit/2a9564326b670382a0e44180be47677e13dde54f))
+
 <a name="3.0.1"></a>
 ## [3.0.1](https://www.github.com/JaCraig/Environs/releases/tag/v3.0.1) (2024-11-27)
 
