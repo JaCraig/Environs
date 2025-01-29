@@ -2,6 +2,29 @@
 
 All notable changes to this project will be documented in this file. See [versionize](https://github.com/versionize/versionize) for commit guidelines.
 
+<a name="3.0.3"></a>
+## [3.0.3](https://www.github.com/JaCraig/Environs/releases/tag/v3.0.3) (2025-01-29)
+
+### Bug Fixes
+
+* bump versionize in /Environs in the dependencies group ([6d24a79](https://www.github.com/JaCraig/Environs/commit/6d24a79a4e0edf67985ddbb1a60655f25e93b3bb))
+
+### Other
+
+* Merge pull request #75 from JaCraig/dependabot/nuget/Environs.Tests/dependencies-637ad84d5b ([6daf55c](https://www.github.com/JaCraig/Environs/commit/6daf55c4a45c6c4b710a9ab2df591e0bd8eed9c8))
+* Merge pull request #76 from JaCraig/dependabot/nuget/Environs.Tests/dependencies-37a7915f86 ([0f347f6](https://www.github.com/JaCraig/Environs/commit/0f347f6484fc34ecd3fa99216213d2f5d1c47f84))
+* Merge pull request #77 from JaCraig/dependabot/nuget/Environs.Tests/dependencies-2d63af336a ([a8fbf35](https://www.github.com/JaCraig/Environs/commit/a8fbf355e8ebcc27ace6bd6d6e69260a8e66c0dd))
+* Merge pull request #78 from JaCraig/dependabot/nuget/Environs.Tests/dependencies-1b1abef9e9 ([042dfee](https://www.github.com/JaCraig/Environs/commit/042dfeef36d79988fcee3a2408ab46e5c6b31df4))
+* Merge pull request #79 from JaCraig/dependabot/nuget/Environs.Tests/dependencies-293c44675e ([d949056](https://www.github.com/JaCraig/Environs/commit/d9490561dbe5c92b8c654cbff7dd8bb3a1d635f0))
+* Merge pull request #80 from JaCraig/dependabot/nuget/Environs/dependencies-836e21bf11 ([ad28552](https://www.github.com/JaCraig/Environs/commit/ad285529bd1fd2a3e22012099e5057e91eb90175))
+* Merge pull request #81 from JaCraig/dependabot/nuget/Environs.Tests/dependencies-836e21bf11 ([a143645](https://www.github.com/JaCraig/Environs/commit/a143645d246a9ce8149b5c2502f84032dfc06d1f))
+* bump Microsoft.Windows.Compatibility ([0b93642](https://www.github.com/JaCraig/Environs/commit/0b936428553927986e2e72950c88a53375282459))
+* bump the dependencies group in /Environs.Tests with 2 updates ([4b65c03](https://www.github.com/JaCraig/Environs/commit/4b65c03eb38c5038a3ee47785e318c10c5c4fa91))
+* bump the dependencies group in /Environs.Tests with 2 updates ([d7812e4](https://www.github.com/JaCraig/Environs/commit/d7812e40282cf26e2e2029b00b61e4496908f046))
+* bump the dependencies group in /Environs.Tests with 2 updates ([d8d913d](https://www.github.com/JaCraig/Environs/commit/d8d913daa3f1e679a709f80e308160a41eb26f23))
+* bump versionize in /Environs.Tests in the dependencies group ([bcf6602](https://www.github.com/JaCraig/Environs/commit/bcf6602152b5372dba3a10d62bff13fb0880a86f))
+* bump xunit.runner.visualstudio ([2638a3f](https://www.github.com/JaCraig/Environs/commit/2638a3fb9bae10654e47a7bed9b56b896b17d296))
+
 <a name="3.0.2"></a>
 ## [3.0.2](https://www.github.com/JaCraig/Environs/releases/tag/v3.0.2) (2024-12-09)
 
