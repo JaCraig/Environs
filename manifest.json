@@ -18,7 +18,11 @@
           "relative_path": "api/Environs.AuthenticationOptions.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Environs.AuthenticationOptions",
+      "Summary": "<p sourcefile=\"api/Environs.AuthenticationOptions.yml\" sourcestartlinenumber=\"1\">Authentication options</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -28,7 +32,11 @@
           "relative_path": "api/Environs.CommonClasses.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Environs.CommonClasses",
+      "Summary": "<p sourcefile=\"api/Environs.CommonClasses.yml\" sourcestartlinenumber=\"1\">Common WMI classes</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -38,7 +46,11 @@
           "relative_path": "api/Environs.Environment.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Environs.Environment",
+      "Summary": "<p sourcefile=\"api/Environs.Environment.yml\" sourcestartlinenumber=\"1\">WMI environment query helper</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -48,7 +60,11 @@
           "relative_path": "api/Environs.HelperClasses.Applications.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Environs.HelperClasses.Applications",
+      "Summary": "<p sourcefile=\"api/Environs.HelperClasses.Applications.yml\" sourcestartlinenumber=\"1\">Applications helpers</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -58,7 +74,11 @@
           "relative_path": "api/Environs.HelperClasses.NetworkHelper.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Environs.HelperClasses.NetworkHelper",
+      "Summary": "<p sourcefile=\"api/Environs.HelperClasses.NetworkHelper.yml\" sourcestartlinenumber=\"1\">Helper methods for network related items.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -68,7 +88,11 @@
           "relative_path": "api/Environs.HelperClasses.PrinterManager.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Environs.HelperClasses.PrinterManager",
+      "Summary": "<p sourcefile=\"api/Environs.HelperClasses.PrinterManager.yml\" sourcestartlinenumber=\"1\">Printer manager</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -78,7 +102,11 @@
           "relative_path": "api/Environs.HelperClasses.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Environs.HelperClasses",
+      "Summary": null
     },
     {
       "type": "ManagedReference",
@@ -88,7 +116,11 @@
           "relative_path": "api/Environs.IPAddressExtensions.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Environs.IPAddressExtensions",
+      "Summary": "<p sourcefile=\"api/Environs.IPAddressExtensions.yml\" sourcestartlinenumber=\"1\">IP address extension methods</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -98,7 +130,11 @@
           "relative_path": "api/Environs.LDAP.Directory.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Environs.LDAP.Directory",
+      "Summary": "<p sourcefile=\"api/Environs.LDAP.Directory.yml\" sourcestartlinenumber=\"1\">LDAP Directory helper</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -108,7 +144,11 @@
           "relative_path": "api/Environs.LDAP.Entry.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Environs.LDAP.Entry",
+      "Summary": "<p sourcefile=\"api/Environs.LDAP.Entry.yml\" sourcestartlinenumber=\"1\">LDAP entry</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -118,7 +158,11 @@
           "relative_path": "api/Environs.LDAP.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Environs.LDAP",
+      "Summary": null
     },
     {
       "type": "ManagedReference",
@@ -128,7 +172,11 @@
           "relative_path": "api/Environs.html"
         }
       },
-      "version": ""
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Environs",
+      "Summary": null
     },
     {
       "type": "Conceptual",
@@ -144,11 +192,11 @@
       "type": "Toc",
       "source_relative_path": "api/toc.yml",
       "output": {
-        ".html": {
-          "relative_path": "api/toc.html"
-        },
         ".json": {
           "relative_path": "api/toc.json"
+        },
+        ".html": {
+          "relative_path": "api/toc.html"
         }
       },
       "version": ""
@@ -167,11 +215,11 @@
       "type": "Toc",
       "source_relative_path": "articles/toc.yml",
       "output": {
-        ".html": {
-          "relative_path": "articles/toc.html"
-        },
         ".json": {
           "relative_path": "articles/toc.json"
+        },
+        ".html": {
+          "relative_path": "articles/toc.html"
         }
       },
       "version": ""
@@ -200,11 +248,11 @@
       "type": "Toc",
       "source_relative_path": "toc.yml",
       "output": {
-        ".html": {
-          "relative_path": "toc.html"
-        },
         ".json": {
           "relative_path": "toc.json"
+        },
+        ".html": {
+          "relative_path": "toc.html"
         }
       },
       "version": ""
