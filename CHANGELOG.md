@@ -2,6 +2,26 @@
 
 All notable changes to this project will be documented in this file. See [versionize](https://github.com/versionize/versionize) for commit guidelines.
 
+<a name="3.0.4"></a>
+## [3.0.4](https://www.github.com/JaCraig/Environs/releases/tag/v3.0.4) (2025-06-27)
+
+### Bug Fixes
+
+* **dependabot:** correct formatting of patterns in configuration ([fe90785](https://www.github.com/JaCraig/Environs/commit/fe9078596e2c4f8ff568e005d229cf347b1965f1))
+
+### Other
+
+* Merge pull request #82 from JaCraig/dependabot/nuget/Environs.Example/dependencies-a7ca42e0b1 ([cd3b46d](https://www.github.com/JaCraig/Environs/commit/cd3b46d176ed0313a98252370f88af562d4ee961))
+* Merge pull request #83 from JaCraig/dependabot/nuget/Environs.Example/dependencies-1956d9a599 ([75c0d38](https://www.github.com/JaCraig/Environs/commit/75c0d38f268c7f96eaf116b3590caa5d6166aaa7))
+* Merge pull request #84 from JaCraig/dependabot/nuget/Environs.Example/dependencies-55391d7d2d ([0feefd7](https://www.github.com/JaCraig/Environs/commit/0feefd74b7855b5ceb6164cd89a65e391ecf7e54))
+* Merge pull request #85 from JaCraig/dependabot/nuget/Environs/Microsoft.Windows.Compatibility-9.0.5 ([6651e6f](https://www.github.com/JaCraig/Environs/commit/6651e6fa54052635aa13592d8606ebd7bf86500f))
+* Merge pull request #86 from JaCraig/dependabot/nuget/Environs/dependencies-169d3e2422 ([da3c889](https://www.github.com/JaCraig/Environs/commit/da3c889b1213678c67c77d5d3281431a8f303714))
+* Update Microsoft.Windows.Compatibility to 9.0.5 ([d0ad828](https://www.github.com/JaCraig/Environs/commit/d0ad828e52a99490e9c7b3ea01db7719c43b4f37))
+* bump Microsoft.Windows.Compatibility ([7621981](https://www.github.com/JaCraig/Environs/commit/76219817396136a581a6876852c899b7945ea3c2))
+* bump Microsoft.Windows.Compatibility ([ade3d6a](https://www.github.com/JaCraig/Environs/commit/ade3d6a19df092cae2d6d41171658b1f45853694))
+* bump Microsoft.Windows.Compatibility ([1cb52c2](https://www.github.com/JaCraig/Environs/commit/1cb52c2a403a820f6d3565395ba9cfb63408fdfa))
+* Bump the dependencies group with 1 update ([5c430c7](https://www.github.com/JaCraig/Environs/commit/5c430c7db5f744f40ee91ca6ce7ec9064cf2378f))
+
 <a name="3.0.3"></a>
 ## [3.0.3](https://www.github.com/JaCraig/Environs/releases/tag/v3.0.3) (2025-01-29)
 
