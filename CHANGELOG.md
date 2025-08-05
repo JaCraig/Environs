@@ -2,6 +2,25 @@
 
 All notable changes to this project will be documented in this file. See [versionize](https://github.com/versionize/versionize) for commit guidelines.
 
+<a name="3.0.5"></a>
+## [3.0.5](https://www.github.com/JaCraig/Environs/releases/tag/v3.0.5) (2025-08-05)
+
+### Bug Fixes
+
+* Bump the dependencies group with 1 update ([d38716e](https://www.github.com/JaCraig/Environs/commit/d38716eab9853b0458818b6b88ddab0c8b6b1f66))
+
+### Other
+
+* Merge pull request #87 from JaCraig/dependabot/nuget/Environs.Tests/dependencies-0110843c0c ([881aa04](https://www.github.com/JaCraig/Environs/commit/881aa047751a8a0cca0121dcefbcc94a4224e147))
+* Merge pull request #88 from JaCraig/dependabot/nuget/Environs/dependencies-dc62356314 ([ba80a40](https://www.github.com/JaCraig/Environs/commit/ba80a40a23a7d7a84c791825f99c37cca4fa07b6))
+* Merge pull request #89 from JaCraig/dependabot/nuget/Environs.Tests/dependencies-f5ef2f2cd0 ([9af827b](https://www.github.com/JaCraig/Environs/commit/9af827b9d9ee0395665cf749a7320c362d1d03b2))
+* Merge pull request #90 from JaCraig/dependabot/nuget/Environs.Tests/dependencies-0b34180b1d ([1d444f6](https://www.github.com/JaCraig/Environs/commit/1d444f68320ded46ec138197ccdac9fbbb8297e8))
+* Merge pull request #91 from JaCraig/dependabot/nuget/Environs/dependencies-5f6620bd1c ([8d7b6d4](https://www.github.com/JaCraig/Environs/commit/8d7b6d4b16af34307638b73b68d9da3c5bb1172a))
+* Bump the dependencies group with 1 update ([dd8ecb8](https://www.github.com/JaCraig/Environs/commit/dd8ecb8f01543d02d801b314bac0d20b29f80c43))
+* Bump the dependencies group with 1 update ([0b1b7e7](https://www.github.com/JaCraig/Environs/commit/0b1b7e717c490981fcdba761d277294acdad6b16))
+* Bump the dependencies group with 1 update ([32f4614](https://www.github.com/JaCraig/Environs/commit/32f46147c84ff2e8659f34fad9ce7e26e069f09a))
+* Bump the dependencies group with 2 updates ([b181cfa](https://www.github.com/JaCraig/Environs/commit/b181cfa1bc57dc9e13f391105d6cd9d4561ea473))
+
 <a name="3.0.4"></a>
 ## [3.0.4](https://www.github.com/JaCraig/Environs/releases/tag/v3.0.4) (2025-06-27)
 
