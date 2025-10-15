@@ -2,6 +2,23 @@
 
 All notable changes to this project will be documented in this file. See [versionize](https://github.com/versionize/versionize) for commit guidelines.
 
+<a name="3.0.7"></a>
+## [3.0.7](https://www.github.com/JaCraig/Environs/releases/tag/v3.0.7) (2025-10-15)
+
+### Bug Fixes
+
+* Bump the dependencies group with 1 update ([56baf13](https://www.github.com/JaCraig/Environs/commit/56baf13c3d29a806f07609306778595c91832de0))
+
+### Other
+
+* Merge pull request #100 from JaCraig/dependabot/nuget/Environs/dependencies-14799c5fe0 ([e43ab5e](https://www.github.com/JaCraig/Environs/commit/e43ab5e03dd1446696bf6d7acc101925df1f546c))
+* Merge pull request #97 from JaCraig/dependabot/nuget/Environs.Tests/dependencies-6aadeae1b1 ([7aceb01](https://www.github.com/JaCraig/Environs/commit/7aceb012cd3d4cd53ca4dd07c04a75edc904ac77))
+* Merge pull request #98 from JaCraig/dependabot/nuget/Environs.Tests/dependencies-4c18470eab ([9cd5fe9](https://www.github.com/JaCraig/Environs/commit/9cd5fe94d6a2a1f54c6fb29b9c69aec26d80dc63))
+* Merge pull request #99 from JaCraig/dependabot/nuget/Environs/dependencies-14799c5fe0 ([d0e5317](https://www.github.com/JaCraig/Environs/commit/d0e53172a30d8c0b6c584a7d2d7f28593cbbd081))
+* Bump the dependencies group with 1 update ([dec72a9](https://www.github.com/JaCraig/Environs/commit/dec72a9d98e095633a45ef8444ff59f802593fcb))
+* Bump the dependencies group with 1 update ([4a4f892](https://www.github.com/JaCraig/Environs/commit/4a4f892c285a77ce3b4b8cf551dae5af0f47af7b))
+* Bump the dependencies group with 1 update ([4fcbfd5](https://www.github.com/JaCraig/Environs/commit/4fcbfd5c60fb3fdd23415b130465344e4b90d5c8))
+
 <a name="3.0.6"></a>
 ## [3.0.6](https://www.github.com/JaCraig/Environs/releases/tag/v3.0.6) (2025-09-10)
 
