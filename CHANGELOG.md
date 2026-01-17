@@ -2,6 +2,20 @@
 
 All notable changes to this project will be documented in this file. See [versionize](https://github.com/versionize/versionize) for commit guidelines.
 
+<a name="3.1.2"></a>
+## [3.1.2](https://www.github.com/JaCraig/Environs/releases/tag/v3.1.2) (2026-01-17)
+
+### Bug Fixes
+
+* Bump the dependencies group with 3 updates ([1ccefca](https://www.github.com/JaCraig/Environs/commit/1ccefcaf9008348e505b2ffda05d2498e39c5e2c))
+
+### Other
+
+* Merge pull request #104 from JaCraig/dependabot/nuget/Environs/dependencies-907d755157 ([f58c5fa](https://www.github.com/JaCraig/Environs/commit/f58c5fa9fd9e7dac6c49f42743712816fe03fac0))
+* Merge pull request #105 from JaCraig/dependabot/nuget/Environs/dependencies-837b03c80b ([941e1c7](https://www.github.com/JaCraig/Environs/commit/941e1c79c39945b7cb2f11da0c6b3882dbf464bd))
+* Bump the dependencies group with 2 updates ([765de44](https://www.github.com/JaCraig/Environs/commit/765de44d3299d3714ac8985b0047c3e8da6ed2e3))
+* Specify languages for CodeQL analysis ([65a8b0a](https://www.github.com/JaCraig/Environs/commit/65a8b0aba8258bd29c8434032b99f6b7813d0e54))
+
 <a name="3.1.1"></a>
 ## [3.1.1](https://www.github.com/JaCraig/Environs/releases/tag/v3.1.1) (2025-11-13)
 
