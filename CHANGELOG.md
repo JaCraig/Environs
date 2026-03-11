@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [versionize](https://github.com/versionize/versionize) for commit guidelines.
 
+<a name="3.2.0"></a>
+## [3.2.0](https://www.github.com/JaCraig/Environs/releases/tag/v3.2.0) (2026-03-11)
+
+### Features
+
+* **core:** modernize codebase for C# 12 and .NET 10 ([98ced1c](https://www.github.com/JaCraig/Environs/commit/98ced1c0fe3f955e21b4525ceb10adbf354bcdac))
+
 <a name="3.1.4"></a>
 ## [3.1.4](https://www.github.com/JaCraig/Environs/releases/tag/v3.1.4) (2026-03-11)
 

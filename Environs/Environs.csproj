@@ -15,7 +15,7 @@
     <Copyright>Copyright © James Craig 2017</Copyright>
     <PackageTags>wmi;ldap;Windows Management Instrumentation;Lightweight Directory Access
       Protocol;System Management</PackageTags>
-    <Version>3.1.4</Version>
+    <Version>3.2.0</Version>
     <Title>Environs</Title>
     <PackageIcon>Icon.png</PackageIcon>
     <PackageReadmeFile>README.md</PackageReadmeFile>
@@ -57,9 +57,7 @@
     </PackageReference>
   </ItemGroup>
   <Target Name="Husky" BeforeTargets="Restore;CollectPackageReferences" Condition="'$(HUSKY)' != 0">
-    <Exec Command="dotnet tool restore" StandardOutputImportance="Low"
-      StandardErrorImportance="High" />
-    <Exec Command="dotnet husky install" StandardOutputImportance="Low"
-      StandardErrorImportance="High" WorkingDirectory=".." />
+    <Exec Command="dotnet tool restore" StandardOutputImportance="Low" StandardErrorImportance="High" />
+    <Exec Command="dotnet husky install" StandardOutputImportance="Low" StandardErrorImportance="High" WorkingDirectory=".." />
   </Target>
 </Project>
