@@ -17,6 +17,7 @@ limitations under the License.
 using System;
 using System.Collections.Generic;
 using System.DirectoryServices;
+using System.Runtime.Versioning;
 using System.Text;
 
 namespace Environs.LDAP
@@ -25,26 +26,19 @@ namespace Environs.LDAP
     /// LDAP entry
     /// </summary>
     /// <seealso cref="System.IDisposable"/>
-    public class Entry : IDisposable
+    /// <remarks>Initializes a new instance of the <see cref="Entry"/> class.</remarks>
+    /// <param name="directoryEntry">The directory entry.</param>
+    /// <exception cref="System.ArgumentNullException">directoryEntry</exception>
+    [SupportedOSPlatform("windows")]
+    public class Entry(DirectoryEntry directoryEntry) : IDisposable
     {
-        /// <summary>
-        /// Initializes a new instance of the <see cref="Entry"/> class.
-        /// </summary>
-        /// <param name="directoryEntry">The directory entry.</param>
-        /// <exception cref="System.ArgumentNullException">directoryEntry</exception>
-        public Entry(DirectoryEntry directoryEntry)
-        {
-            DirectoryEntry = directoryEntry ?? throw new ArgumentNullException(nameof(directoryEntry));
-        }
-
         /// <summary>
         /// Gets or sets the cn.
         /// </summary>
         /// <value>The cn.</value>
         public string CN
         {
-            get { return (string)GetValue("cn"); }
-            set { SetValue("cn", value); }
+            get => (string)GetValue("cn"); set => SetValue("cn", value);
         }
 
         /// <summary>
@@ -53,8 +47,7 @@ namespace Environs.LDAP
         /// <value>The company.</value>
         public string Company
         {
-            get { return (string)GetValue("company"); }
-            set { SetValue("company", value); }
+            get => (string)GetValue("company"); set => SetValue("company", value);
         }
 
         /// <summary>
@@ -63,15 +56,14 @@ namespace Environs.LDAP
         /// <value>The country code.</value>
         public string CountryCode
         {
-            get { return (string)GetValue("countrycode"); }
-            set { SetValue("countrycode", value); }
+            get => (string)GetValue("countrycode"); set => SetValue("countrycode", value);
         }
 
         /// <summary>
         /// Gets the directory entry.
         /// </summary>
         /// <value>The directory entry.</value>
-        public DirectoryEntry DirectoryEntry { get; private set; }
+        public DirectoryEntry DirectoryEntry { get; private set; } = directoryEntry ?? throw new ArgumentNullException(nameof(directoryEntry));
 
         /// <summary>
         /// Gets or sets the display name.
@@ -79,8 +71,7 @@ namespace Environs.LDAP
         /// <value>The display name.</value>
         public string DisplayName
         {
-            get { return (string)GetValue("displayname"); }
-            set { SetValue("displayname", value); }
+            get => (string)GetValue("displayname"); set => SetValue("displayname", value);
         }
 
         /// <summary>
@@ -89,8 +80,7 @@ namespace Environs.LDAP
         /// <value>The name of the distinguished.</value>
         public string DistinguishedName
         {
-            get { return (string)GetValue("distinguishedname"); }
-            set { SetValue("distinguishedname", value); }
+            get => (string)GetValue("distinguishedname"); set => SetValue("distinguishedname", value);
         }
 
         /// <summary>
@@ -99,8 +89,7 @@ namespace Environs.LDAP
         /// <value>The email.</value>
         public string Email
         {
-            get { return (string)GetValue("mail"); }
-            set { SetValue("mail", value); }
+            get => (string)GetValue("mail"); set => SetValue("mail", value);
         }
 
         /// <summary>
@@ -109,8 +98,7 @@ namespace Environs.LDAP
         /// <value>The name of the given.</value>
         public string GivenName
         {
-            get { return (string)GetValue("givenname"); }
-            set { SetValue("givenname", value); }
+            get => (string)GetValue("givenname"); set => SetValue("givenname", value);
         }
 
         /// <summary>
@@ -119,8 +107,7 @@ namespace Environs.LDAP
         /// <value>The initials.</value>
         public string Initials
         {
-            get { return (string)GetValue("initials"); }
-            set { SetValue("initials", value); }
+            get => (string)GetValue("initials"); set => SetValue("initials", value);
         }
 
         /// <summary>
@@ -131,9 +118,9 @@ namespace Environs.LDAP
         {
             get
             {
-                List<string> Values = new List<string>();
+                List<string> Values = [];
                 PropertyValueCollection Collection = DirectoryEntry.Properties["memberof"];
-                foreach (object Item in Collection)
+                foreach (var Item in Collection)
                 {
                     Values.Add((string)Item);
                 }
@@ -147,8 +134,7 @@ namespace Environs.LDAP
         /// <value>The name.</value>
         public string Name
         {
-            get { return (string)GetValue("name"); }
-            set { SetValue("name", value); }
+            get => (string)GetValue("name"); set => SetValue("name", value);
         }
 
         /// <summary>
@@ -157,8 +143,7 @@ namespace Environs.LDAP
         /// <value>The office.</value>
         public string Office
         {
-            get { return (string)GetValue("physicaldeliveryofficename"); }
-            set { SetValue("physicaldeliveryofficename", value); }
+            get => (string)GetValue("physicaldeliveryofficename"); set => SetValue("physicaldeliveryofficename", value);
         }
 
         /// <summary>
@@ -167,8 +152,7 @@ namespace Environs.LDAP
         /// <value>The name of the sam account.</value>
         public string SamAccountName
         {
-            get { return (string)GetValue("samaccountname"); }
-            set { SetValue("samaccountname", value); }
+            get => (string)GetValue("samaccountname"); set => SetValue("samaccountname", value);
         }
 
         /// <summary>
@@ -177,8 +161,7 @@ namespace Environs.LDAP
         /// <value>The telephone number.</value>
         public string TelephoneNumber
         {
-            get { return (string)GetValue("telephonenumber"); }
-            set { SetValue("telephonenumber", value); }
+            get => (string)GetValue("telephonenumber"); set => SetValue("telephonenumber", value);
         }
 
         /// <summary>
@@ -187,8 +170,7 @@ namespace Environs.LDAP
         /// <value>The title.</value>
         public string Title
         {
-            get { return (string)GetValue("title"); }
-            set { SetValue("title", value); }
+            get => (string)GetValue("title"); set => SetValue("title", value);
         }
 
         /// <summary>
@@ -206,18 +188,12 @@ namespace Environs.LDAP
         /// </summary>
         /// <param name="property">The property.</param>
         /// <returns></returns>
-        public object GetValue(string property)
-        {
-            return DirectoryEntry.Properties[property]?.Value;
-        }
+        public object GetValue(string property) => DirectoryEntry.Properties[property]?.Value;
 
         /// <summary>
         /// Saves this instance.
         /// </summary>
-        public void Save()
-        {
-            DirectoryEntry.CommitChanges();
-        }
+        public void Save() => DirectoryEntry.CommitChanges();
 
         /// <summary>
         /// Sets the value.
@@ -227,8 +203,9 @@ namespace Environs.LDAP
         public void SetValue(string property, object value)
         {
             PropertyValueCollection Collection = DirectoryEntry.Properties[property];
-            if (Collection != null)
-                Collection.Value = value;
+            if (Collection == null)
+                return;
+            Collection.Value = value;
         }
 
         /// <summary>
@@ -240,20 +217,21 @@ namespace Environs.LDAP
         public virtual void SetValue(string property, int index, object value)
         {
             PropertyValueCollection Collection = DirectoryEntry.Properties[property];
-            if (Collection != null)
-                Collection[index] = value;
+            if (Collection == null)
+                return;
+            Collection[index] = value;
         }
 
         /// <summary>
-        /// Returns a <see cref="System.String"/> that represents this instance.
+        /// Returns a <see cref="string"/> that represents this instance.
         /// </summary>
-        /// <returns>A <see cref="System.String"/> that represents this instance.</returns>
+        /// <returns>A <see cref="string"/> that represents this instance.</returns>
         public override string ToString()
         {
-            StringBuilder Builder = new StringBuilder();
+            var Builder = new StringBuilder();
             foreach (PropertyValueCollection Property in DirectoryEntry.Properties)
             {
-                Builder.AppendLine(Property.PropertyName).Append(" = ").AppendLine(Property.Value.ToString());
+                _ = Builder.AppendLine(Property.PropertyName).Append(" = ").AppendLine(Property.Value.ToString());
             }
             return Builder.ToString();
         }
@@ -261,17 +239,14 @@ namespace Environs.LDAP
         /// <summary>
         /// Releases unmanaged and - optionally - managed resources.
         /// </summary>
-        /// <param name="Disposing">
-        /// <c>true</c> to release both managed and unmanaged resources; <c>false</c> to release only
-        /// unmanaged resources.
+        /// <param name="disposing">
+        /// <c>true</c> to release both managed and unmanaged resources; <c>false</c> to release
+        /// only unmanaged resources.
         /// </param>
-        protected virtual void Dispose(bool Disposing)
+        protected virtual void Dispose(bool disposing)
         {
-            if (DirectoryEntry != null)
-            {
-                DirectoryEntry.Dispose();
-                DirectoryEntry = null;
-            }
+            DirectoryEntry?.Dispose();
+            DirectoryEntry = null;
         }
 
         /// <summary>

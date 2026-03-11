@@ -1,16 +1,20 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFrameworks>net8.0;net9.0</TargetFrameworks>
+    <TargetFrameworks>net8.0;net9.0;net10.0</TargetFrameworks>
     <Authors>James Craig</Authors>
     <Company>James Craig</Company>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <PackageLicenseExpression>Apache-2.0</PackageLicenseExpression>
     <PackageProjectUrl>https://github.com/JaCraig/Environs</PackageProjectUrl>
     <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
-    <Description>Environs is a small C# library that provides a simplified interface for working with Windows Management Instrumentation (WMI), Lightweight Directory Access Protocol (LDAP), and related functionality. It aims to make it easier to perform common operations and tasks in these areas without the need for extensive knowledge of the underlying protocols and APIs.</Description>
+    <Description>Environs is a small C# library that provides a simplified interface for working
+      with Windows Management Instrumentation (WMI), Lightweight Directory Access Protocol (LDAP),
+      and related functionality. It aims to make it easier to perform common operations and tasks in
+      these areas without the need for extensive knowledge of the underlying protocols and APIs.</Description>
     <Copyright>Copyright © James Craig 2017</Copyright>
-    <PackageTags>wmi;ldap;Windows Management Instrumentation;Lightweight Directory Access Protocol;System Management</PackageTags>
+    <PackageTags>wmi;ldap;Windows Management Instrumentation;Lightweight Directory Access
+      Protocol;System Management</PackageTags>
     <Version>3.1.4</Version>
     <Title>Environs</Title>
     <PackageIcon>Icon.png</PackageIcon>
@@ -24,7 +28,8 @@
     <GenerateAssemblyProductAttribute>false</GenerateAssemblyProductAttribute>
     <PublishRepositoryUrl>true</PublishRepositoryUrl>
     <EmbedUntrackedSources>true</EmbedUntrackedSources>
-    <AllowedOutputExtensionsInPackageBuildOutputFolder>$(AllowedOutputExtensionsInPackageBuildOutputFolder);.pdb</AllowedOutputExtensionsInPackageBuildOutputFolder>
+    <AllowedOutputExtensionsInPackageBuildOutputFolder>
+      $(AllowedOutputExtensionsInPackageBuildOutputFolder);.pdb</AllowedOutputExtensionsInPackageBuildOutputFolder>
     <IncludeSymbols>true</IncludeSymbols>
     <SymbolPackageFormat>snupkg</SymbolPackageFormat>
     <EnableNETAnalyzers>true</EnableNETAnalyzers>
@@ -44,7 +49,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="Microsoft.CSharp" Version="4.7.0" />
     <PackageReference Include="Microsoft.Windows.Compatibility" Version="10.0.4" />
     <PackageReference Include="Microsoft.SourceLink.GitHub" Version="10.0.200" PrivateAssets="All" />
     <PackageReference Include="Microsoft.CodeAnalysis.NetAnalyzers" Version="10.0.200">
@@ -53,7 +57,9 @@
     </PackageReference>
   </ItemGroup>
   <Target Name="Husky" BeforeTargets="Restore;CollectPackageReferences" Condition="'$(HUSKY)' != 0">
-    <Exec Command="dotnet tool restore" StandardOutputImportance="Low" StandardErrorImportance="High" />
-    <Exec Command="dotnet husky install" StandardOutputImportance="Low" StandardErrorImportance="High" WorkingDirectory=".." />
+    <Exec Command="dotnet tool restore" StandardOutputImportance="Low"
+      StandardErrorImportance="High" />
+    <Exec Command="dotnet husky install" StandardOutputImportance="Low"
+      StandardErrorImportance="High" WorkingDirectory=".." />
   </Target>
 </Project>

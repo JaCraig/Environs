@@ -20,12 +20,14 @@ using System.Dynamic;
 using System.Globalization;
 using System.Linq;
 using System.Management;
+using System.Runtime.Versioning;
 
 namespace Environs
 {
     /// <summary>
     /// WMI environment query helper
     /// </summary>
+    [SupportedOSPlatform("windows")]
     public class Environment
     {
         /// <summary>
@@ -37,7 +39,7 @@ namespace Environs
         {
             Server = server ?? throw new ArgumentNullException(nameof(server));
             Options = options ?? new AuthenticationOptions();
-            Namespaces = Execute((CommonClasses)"__Namespace", "root").Select(x => ((string)x.Name).ToLower(CultureInfo.CurrentCulture)).ToArray();
+            Namespaces = [.. Execute((CommonClasses)"__Namespace", "root").Select(x => ((string)x.Name).ToLower(CultureInfo.CurrentCulture))];
         }
 
         /// <summary>
@@ -73,13 +75,13 @@ namespace Environs
         public IEnumerable<dynamic> Execute(CommonClasses managementPath, string nameSpace = @"root\cimv2")
         {
             SetScope(nameSpace);
-            List<dynamic> ReturnValues = new List<dynamic>();
-            using (ManagementClass Class = new ManagementClass(Scope, new ManagementPath(managementPath), new ObjectGetOptions()))
+            List<dynamic> ReturnValues = [];
+            using (var Class = new ManagementClass(Scope, new ManagementPath(managementPath), new ObjectGetOptions()))
             {
-                foreach (ManagementObject NameSpaceInfo in Class.GetInstances())
+                foreach (ManagementObject NameSpaceInfo in Class.GetInstances().Cast<ManagementObject>())
                 {
                     IDictionary<string, object> TempValue = new ExpandoObject();
-                    foreach (var Property in NameSpaceInfo.Properties)
+                    foreach (PropertyData Property in NameSpaceInfo.Properties)
                     {
                         TempValue[Property.Name] = Property.Value;
                     }
@@ -98,12 +100,10 @@ namespace Environs
         public ManagementObjectCollection Execute(string query, string nameSpace = @"root\cimv2")
         {
             SetScope(nameSpace);
-            List<dynamic> ReturnValues = new List<dynamic>();
-            ObjectQuery TempQuery = new ObjectQuery(query);
-            using (ManagementObjectSearcher Searcher = new ManagementObjectSearcher(Scope, TempQuery))
-            {
-                return Searcher.Get();
-            }
+
+            var TempQuery = new ObjectQuery(query);
+            using var Searcher = new ManagementObjectSearcher(Scope, TempQuery);
+            return Searcher.Get();
         }
 
         /// <summary>
@@ -113,11 +113,16 @@ namespace Environs
         private void SetScope(string nameSpace)
         {
             if (Options.Impersonate)
+            {
                 Scope = new ManagementScope(@"\\" + Server + @"\" + nameSpace, new ConnectionOptions() { EnablePrivileges = true, Impersonation = ImpersonationLevel.Impersonate });
-            else if (!string.IsNullOrEmpty(Options.UserName))
+                return;
+            }
+            if (!string.IsNullOrEmpty(Options.UserName))
+            {
                 Scope = new ManagementScope(@"\\" + Server + @"\" + nameSpace, new ConnectionOptions() { Username = Options.UserName, Password = Options.Password });
-            else
-                Scope = new ManagementScope(@"\\" + Server + @"\" + nameSpace);
+                return;
+            }
+            Scope = new ManagementScope(@"\\" + Server + @"\" + nameSpace);
         }
     }
 }

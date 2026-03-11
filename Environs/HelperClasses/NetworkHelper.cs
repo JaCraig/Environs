@@ -58,17 +58,15 @@ namespace Environs.HelperClasses
         /// <returns>True if it is pinged successfully, false otherwise</returns>
         public static bool PingHost(string address, int timeOut = 100)
         {
-            using (Ping PingSender = new Ping())
+            using Ping PingSender = new Ping();
+            PingOptions Options = new PingOptions()
             {
-                PingOptions Options = new PingOptions()
-                {
-                    DontFragment = true
-                };
-                const string Data = "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa";
-                byte[] DataBuffer = Encoding.ASCII.GetBytes(Data);
-                PingReply Reply = PingSender.Send(address, timeOut, DataBuffer, Options);
-                return Reply.Status == IPStatus.Success;
-            }
+                DontFragment = true
+            };
+            const string Data = "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa";
+            byte[] DataBuffer = Encoding.ASCII.GetBytes(Data);
+            PingReply Reply = PingSender.Send(address, timeOut, DataBuffer, Options);
+            return Reply.Status == IPStatus.Success;
         }
     }
 }

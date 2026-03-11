@@ -14,13 +14,16 @@ See the License for the specific language governing permissions and
 limitations under the License.
 */
 
+using System.Linq;
 using System.Management;
+using System.Runtime.Versioning;
 
 namespace Environs.HelperClasses
 {
     /// <summary>
     /// Printer manager
     /// </summary>
+    [SupportedOSPlatform("windows")]
     public static class PrinterManager
     {
         /// <summary>
@@ -37,15 +40,11 @@ namespace Environs.HelperClasses
                 var TempManagementScope = new ManagementScope(ManagementPath.DefaultPath);
                 TempManagementScope.Connect();
 
-                using (var PrinterClass = new ManagementClass(new ManagementPath("Win32_Printer"), null))
-                {
-                    using (var InputParameters = PrinterClass.GetMethodParameters("AddPrinterConnection"))
-                    {
-                        InputParameters.SetPropertyValue("Name", printerName);
-                        PrinterClass.InvokeMethod("AddPrinterConnection", InputParameters, null);
-                        return true;
-                    }
-                }
+                using var PrinterClass = new ManagementClass(new ManagementPath("Win32_Printer"), null);
+                using ManagementBaseObject InputParameters = PrinterClass.GetMethodParameters("AddPrinterConnection");
+                InputParameters.SetPropertyValue("Name", printerName);
+                _ = PrinterClass.InvokeMethod("AddPrinterConnection", InputParameters, null);
+                return true;
             }
             catch
             {
@@ -63,10 +62,10 @@ namespace Environs.HelperClasses
             if (!IsPrinterInstalled(printerName))
                 return false;
             var TempEnvironment = new Environment();
-            var Results = TempEnvironment.Execute("SELECT * FROM Win32_Printer WHERE Name = '" + printerName.Replace("\\", "\\\\") + "'");
+            ManagementObjectCollection Results = TempEnvironment.Execute("SELECT * FROM Win32_Printer WHERE Name = '" + printerName.Replace("\\", "\\\\") + "'");
             if (Results.Count != 0)
             {
-                foreach (ManagementObject Item in Results)
+                foreach (ManagementObject Item in Results.Cast<ManagementObject>())
                 {
                     Item.Delete();
                     return true;
@@ -98,12 +97,12 @@ namespace Environs.HelperClasses
             if (!IsPrinterInstalled(printerName))
                 return;
             var TempEnvironment = new Environment();
-            var Results = TempEnvironment.Execute("SELECT * FROM Win32_Printer WHERE Name = '" + printerName.Replace("\\", "\\\\") + "'");
+            ManagementObjectCollection Results = TempEnvironment.Execute("SELECT * FROM Win32_Printer WHERE Name = '" + printerName.Replace("\\", "\\\\") + "'");
             if (Results.Count != 0)
             {
-                foreach (ManagementObject Item in Results)
+                foreach (ManagementObject Item in Results.Cast<ManagementObject>())
                 {
-                    Item.InvokeMethod("RenamePrinter", new object[] { newName });
+                    _ = Item.InvokeMethod("RenamePrinter", [newName]);
                 }
             }
         }
@@ -117,12 +116,12 @@ namespace Environs.HelperClasses
             if (!IsPrinterInstalled(printerName))
                 return;
             var TempEnvironment = new Environment();
-            var Results = TempEnvironment.Execute("SELECT * FROM Win32_Printer WHERE Name = '" + printerName.Replace("\\", "\\\\") + "'");
+            ManagementObjectCollection Results = TempEnvironment.Execute("SELECT * FROM Win32_Printer WHERE Name = '" + printerName.Replace("\\", "\\\\") + "'");
             if (Results.Count != 0)
             {
-                foreach (ManagementObject Item in Results)
+                foreach (ManagementObject Item in Results.Cast<ManagementObject>())
                 {
-                    Item.InvokeMethod("SetDefaultPrinter", new object[] { printerName });
+                    _ = Item.InvokeMethod("SetDefaultPrinter", [printerName]);
                 }
             }
         }

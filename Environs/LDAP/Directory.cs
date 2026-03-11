@@ -19,6 +19,7 @@ using System.Collections.Generic;
 using System.DirectoryServices;
 using System.Globalization;
 using System.Linq;
+using System.Runtime.Versioning;
 
 namespace Environs.LDAP
 {
@@ -26,6 +27,7 @@ namespace Environs.LDAP
     /// LDAP Directory helper
     /// </summary>
     /// <seealso cref="System.IDisposable"/>
+    [SupportedOSPlatform("windows")]
     public class Directory : IDisposable
     {
         /// <summary>
@@ -64,10 +66,7 @@ namespace Environs.LDAP
         /// <summary>
         /// Closes this instance.
         /// </summary>
-        public void Close()
-        {
-            Entry.Close();
-        }
+        public void Close() => Entry.Close();
 
         /// <summary>
         /// Performs application-defined tasks associated with freeing, releasing, or resetting
@@ -93,7 +92,7 @@ namespace Environs.LDAP
                 ICollection<Entry> Entries = FindActiveUsersAndGroups("memberOf=" + Group.DistinguishedName);
                 if (recursive)
                 {
-                    List<Entry> ReturnValue = new List<Entry>();
+                    List<Entry> ReturnValue = [];
                     foreach (Entry TempEntry in Entries)
                     {
                         Entry GroupEntry = FindGroup(TempEntry.CN);
@@ -111,7 +110,7 @@ namespace Environs.LDAP
             }
             catch
             {
-                return new List<Entry>();
+                return [];
             }
         }
 
@@ -160,7 +159,7 @@ namespace Environs.LDAP
         /// <returns>All entries</returns>
         public ICollection<Entry> FindAll()
         {
-            List<Entry> ReturnedResults = new List<Entry>();
+            List<Entry> ReturnedResults = [];
             using (SearchResultCollection Results = Searcher.FindAll())
             {
                 foreach (SearchResult Result in Results)
@@ -188,10 +187,7 @@ namespace Environs.LDAP
         /// </summary>
         /// <param name="groupName">Name of the group.</param>
         /// <returns>The result</returns>
-        public Entry FindGroup(string groupName)
-        {
-            return FindGroups("cn=" + groupName).FirstOrDefault();
-        }
+        public Entry FindGroup(string groupName) => FindGroups("cn=" + groupName).FirstOrDefault();
 
         /// <summary>
         /// Finds the group members.
@@ -207,7 +203,7 @@ namespace Environs.LDAP
                 ICollection<Entry> Entries = FindUsersAndGroups("memberOf=" + Group.DistinguishedName);
                 if (recursive)
                 {
-                    List<Entry> ReturnValue = new List<Entry>();
+                    List<Entry> ReturnValue = [];
                     foreach (Entry Entry in Entries)
                     {
                         Entry TempEntry = FindGroup(Entry.CN);
@@ -225,7 +221,7 @@ namespace Environs.LDAP
             }
             catch
             {
-                return new List<Entry>();
+                return [];
             }
         }
 
@@ -247,10 +243,7 @@ namespace Environs.LDAP
         /// Finds the one.
         /// </summary>
         /// <returns>The one.</returns>
-        public Entry FindOne()
-        {
-            return new Entry(Searcher.FindOne().GetDirectoryEntry());
-        }
+        public Entry FindOne() => new(Searcher.FindOne().GetDirectoryEntry());
 
         /// <summary>
         /// Finds the name of the user by user.
@@ -260,9 +253,9 @@ namespace Environs.LDAP
         /// <exception cref="System.ArgumentNullException">userName</exception>
         public Entry FindUserByUserName(string userName)
         {
-            if (string.IsNullOrEmpty(userName))
-                throw new ArgumentNullException(nameof(userName));
-            return FindUsers("samAccountName=" + userName).FirstOrDefault();
+            return string.IsNullOrEmpty(userName)
+                ? throw new ArgumentNullException(nameof(userName))
+                : FindUsers("samAccountName=" + userName).FirstOrDefault();
         }
 
         /// <summary>
@@ -297,8 +290,8 @@ namespace Environs.LDAP
         /// Releases unmanaged and - optionally - managed resources.
         /// </summary>
         /// <param name="disposing">
-        /// <c>true</c> to release both managed and unmanaged resources; <c>false</c> to release only
-        /// unmanaged resources.
+        /// <c>true</c> to release both managed and unmanaged resources; <c>false</c> to release
+        /// only unmanaged resources.
         /// </param>
         protected void Dispose(bool disposing)
         {
@@ -308,11 +301,9 @@ namespace Environs.LDAP
                 Entry.Dispose();
                 Entry = null;
             }
-            if (Searcher != null)
-            {
-                Searcher.Dispose();
-                Searcher = null;
-            }
+
+            Searcher?.Dispose();
+            Searcher = null;
         }
 
         /// <summary>

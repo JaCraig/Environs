@@ -16,6 +16,7 @@ limitations under the License.
 
 using System.Collections.Generic;
 using System.Management;
+using System.Runtime.Versioning;
 
 namespace Environs.HelperClasses
 {
@@ -30,31 +31,28 @@ namespace Environs.HelperClasses
         /// <param name="machineName">Name of the machine.</param>
         /// <param name="options">The options.</param>
         /// <returns>The installed applications.</returns>
+        [SupportedOSPlatform("windows")]
         public static IEnumerable<string> GetInstalledApplications(string machineName = "localhost", AuthenticationOptions options = null)
         {
-            options = options ?? new AuthenticationOptions();
-            List<string> ReturnValues = new List<string>();
-            var Scope = SetScope(machineName, options);
-            using (ManagementClass Class = new ManagementClass(Scope, new ManagementPath("StdRegProv"), null))
+            options ??= new AuthenticationOptions();
+            List<string> ReturnValues = [];
+            ManagementScope Scope = SetScope(machineName, options);
+            using (var Class = new ManagementClass(Scope, new ManagementPath("StdRegProv"), null))
             {
-                const uint HKEY_LOCAL_MACHINE = unchecked((uint)0x80000002);
-                object[] Args = { HKEY_LOCAL_MACHINE, @"SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall", null };
-                Class.InvokeMethod("EnumKey", Args);
-                string[] Keys = Args[2] as string[];
-                using (ManagementBaseObject MethodParams = Class.GetMethodParameters("GetStringValue"))
+                const uint HKEY_LOCAL_MACHINE = unchecked(0x80000002);
+                object[] Args = [HKEY_LOCAL_MACHINE, @"SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall", null];
+                _ = Class.InvokeMethod("EnumKey", Args);
+                var Keys = Args[2] as string[];
+                using ManagementBaseObject MethodParams = Class.GetMethodParameters("GetStringValue");
+                MethodParams["hDefKey"] = HKEY_LOCAL_MACHINE;
+                foreach (var SubKey in Keys)
                 {
-                    MethodParams["hDefKey"] = HKEY_LOCAL_MACHINE;
-                    foreach (string SubKey in Keys)
+                    MethodParams["sSubKeyName"] = @"SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\" + SubKey;
+                    MethodParams["sValueName"] = "DisplayName";
+                    using ManagementBaseObject Results = Class.InvokeMethod("GetStringValue", MethodParams, null);
+                    if (Results != null && (uint)Results["ReturnValue"] == 0)
                     {
-                        MethodParams["sSubKeyName"] = @"SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\" + SubKey;
-                        MethodParams["sValueName"] = "DisplayName";
-                        using (ManagementBaseObject Results = Class.InvokeMethod("GetStringValue", MethodParams, null))
-                        {
-                            if (Results != null && (uint)Results["ReturnValue"] == 0)
-                            {
-                                ReturnValues.Add(Results["sValue"].ToString());
-                            }
-                        }
+                        ReturnValues.Add(Results["sValue"].ToString());
                     }
                 }
             }
@@ -67,13 +65,14 @@ namespace Environs.HelperClasses
         /// <param name="machineName">Name of the machine.</param>
         /// <param name="options">The options.</param>
         /// <returns>The management scope</returns>
+        [SupportedOSPlatform("windows")]
         private static ManagementScope SetScope(string machineName, AuthenticationOptions options)
         {
-            if (options.Impersonate)
-                return new ManagementScope(@"\\" + machineName + @"\root\default", new ConnectionOptions() { EnablePrivileges = true, Impersonation = ImpersonationLevel.Impersonate });
-            if (!string.IsNullOrEmpty(options.UserName))
-                return new ManagementScope(@"\\" + machineName + @"\root\default", new ConnectionOptions() { Username = options.UserName, Password = options.Password });
-            return new ManagementScope(@"\\" + machineName + @"\root\default");
+            return options.Impersonate
+                ? new ManagementScope(@"\\" + machineName + @"\root\default", new ConnectionOptions() { EnablePrivileges = true, Impersonation = ImpersonationLevel.Impersonate })
+                : !string.IsNullOrEmpty(options.UserName)
+                ? new ManagementScope(@"\\" + machineName + @"\root\default", new ConnectionOptions() { Username = options.UserName, Password = options.Password })
+                : new ManagementScope(@"\\" + machineName + @"\root\default");
         }
     }
 }
