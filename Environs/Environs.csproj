@@ -15,7 +15,7 @@
     <Copyright>Copyright © James Craig 2017</Copyright>
     <PackageTags>wmi;ldap;Windows Management Instrumentation;Lightweight Directory Access
       Protocol;System Management</PackageTags>
-    <Version>3.2.0</Version>
+    <Version>3.2.1</Version>
     <Title>Environs</Title>
     <PackageIcon>Icon.png</PackageIcon>
     <PackageReadmeFile>README.md</PackageReadmeFile>

@@ -2,6 +2,19 @@
 
 All notable changes to this project will be documented in this file. See [versionize](https://github.com/versionize/versionize) for commit guidelines.
 
+<a name="3.2.1"></a>
+## [3.2.1](https://www.github.com/JaCraig/Environs/releases/tag/v3.2.1) (2026-03-12)
+
+### Bug Fixes
+
+* Bump the dependencies group with 1 update ([72196da](https://www.github.com/JaCraig/Environs/commit/72196da76e5dd74ec65337e9be78fb36b7cf3d24))
+
+### Other
+
+* Merge pull request #114 from JaCraig/dependabot/nuget/dot-config/dependencies-ef2d746a42 ([3e9aea7](https://www.github.com/JaCraig/Environs/commit/3e9aea7fbd2070e4527a98359dd7595f8dd2e174))
+* Merge pull request #115 from JaCraig/dependabot/nuget/dot-config/dependencies-ef2d746a42 ([67678f9](https://www.github.com/JaCraig/Environs/commit/67678f94b3be2fafa2edb5a9d0c8295386a10498))
+* Bump the dependencies group with 1 update ([597d1a0](https://www.github.com/JaCraig/Environs/commit/597d1a04bbbe70083f226bb5081605adbe2e68e5))
+
 <a name="3.2.0"></a>
 ## [3.2.0](https://www.github.com/JaCraig/Environs/releases/tag/v3.2.0) (2026-03-11)
 
