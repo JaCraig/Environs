@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file. See [versionize](https://github.com/versionize/versionize) for commit guidelines.
 
+<a name="3.3.0"></a>
+## [3.3.0](https://www.github.com/JaCraig/Environs/releases/tag/v3.3.0) (2026-03-29)
+
+### Features
+
+* **dependabot:** update schedules to weekly ([756d271](https://www.github.com/JaCraig/Environs/commit/756d271bf58a80de6350c0de8befa945e49d9b3c))
+
+### Other
+
+* Merge pull request #120 from JaCraig/dependabot/nuget/Environs.Tests/dependencies-4bb5c90d9e ([e100f0b](https://www.github.com/JaCraig/Environs/commit/e100f0bb1439eaca6c7048f22e07a05e69db410d))
+* Bump the dependencies group with 2 updates ([8094023](https://www.github.com/JaCraig/Environs/commit/8094023e8d5c92ba889d9685ea475bbb9c2782fd))
+
 <a name="3.2.2"></a>
 ## [3.2.2](https://www.github.com/JaCraig/Environs/releases/tag/v3.2.2) (2026-03-16)
 
