@@ -2,6 +2,20 @@
 
 All notable changes to this project will be documented in this file. See [versionize](https://github.com/versionize/versionize) for commit guidelines.
 
+<a name="3.3.4"></a>
+## [3.3.4](https://www.github.com/JaCraig/Environs/releases/tag/v3.3.4) (2026-05-27)
+
+### Bug Fixes
+
+* **workflows:** remove unnecessary secrets from YAML files ([400daa8](https://www.github.com/JaCraig/Environs/commit/400daa8d195176921399ad891f1510a0ad36f48b))
+
+### Other
+
+* Merge pull request #131 from JaCraig/dependabot/nuget/Environs.Tests/dependencies-3fec291e4a ([a03e61b](https://www.github.com/JaCraig/Environs/commit/a03e61b805e653e017e5f432e2a5f747be90bf04))
+* Bump the dependencies group with 2 updates ([380bfac](https://www.github.com/JaCraig/Environs/commit/380bfac164b3ffff17f96a7853d04aa13ed7594c))
+* Merge branch 'master' of https://github.com/JaCraig/Environs ([2bd2a3a](https://www.github.com/JaCraig/Environs/commit/2bd2a3a15677be16e79f752080d0d0a6b637c9e6))
+* **copilot:** add commit message guidelines ([0a63135](https://www.github.com/JaCraig/Environs/commit/0a631353328ee99c3f3effb7f23e8463b5dbc760))
+
 <a name="3.3.3"></a>
 ## [3.3.3](https://www.github.com/JaCraig/Environs/releases/tag/v3.3.3) (2026-05-13)
 
