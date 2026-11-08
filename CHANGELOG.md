@@ -2,6 +2,35 @@
 
 All notable changes to this project will be documented in this file. See [versionize](https://github.com/versionize/versionize) for commit guidelines.
 
+<a name="3.3.6"></a>
+## [3.3.6](https://www.github.com/JaCraig/Environs/releases/tag/v3.3.6) (2026-11-08)
+
+### Bug Fixes
+
+* Bump the dependencies group with 1 update ([e6575c9](https://www.github.com/JaCraig/Environs/commit/e6575c9a4eb566907e83ee203c8cd11ff38e9428))
+* Bump the dependencies group with 3 updates ([e437368](https://www.github.com/JaCraig/Environs/commit/e437368f8465f43660dbb28fd802e3777e2681a0))
+* Bump the dependencies group with 3 updates ([48cc392](https://www.github.com/JaCraig/Environs/commit/48cc3924a42ae328fc84ce6d62a47ea784da8388))
+* Bump the dependencies group with 3 updates ([d88465c](https://www.github.com/JaCraig/Environs/commit/d88465cb4720276c9ac51746474cfd087ba66e41))
+* Merge branch 'master' of https://github.com/JaCraig/Environs ([aed4a04](https://www.github.com/JaCraig/Environs/commit/aed4a045ae846621d03b0adfda1f690cc608f92c))
+* **workflows:** update permissions and add NuGet upload steps ([82f53c1](https://www.github.com/JaCraig/Environs/commit/82f53c12b464e79debaae1094192894d4893ca2c))
+
+### Other
+
+* Merge pull request #140 from JaCraig/dependabot/nuget/dot-config/dependencies-87dec4854d ([3f0657f](https://www.github.com/JaCraig/Environs/commit/3f0657f8f270b60bd06eb345c9c433f3263860c6))
+* Merge pull request #141 from JaCraig/dependabot/nuget/Environs/dependencies-7632450fa6 ([18d4655](https://www.github.com/JaCraig/Environs/commit/18d46551d29c16550b8080ee0952f9c3d5a5615b))
+* Merge pull request #142 from JaCraig/dependabot/nuget/Environs.Tests/dependencies-b813a5885f ([b49a48f](https://www.github.com/JaCraig/Environs/commit/b49a48f354e4994320a3de37b432e4b1855e367f))
+* Merge pull request #143 from JaCraig/dependabot/nuget/Environs/dependencies-7632450fa6 ([478ae01](https://www.github.com/JaCraig/Environs/commit/478ae01baead4c87f801dce244ae2a17e8c6d796))
+* Merge pull request #144 from JaCraig/dependabot/nuget/Environs.Tests/dependencies-8af17d2a0f ([d5c9b68](https://www.github.com/JaCraig/Environs/commit/d5c9b6836af7f6ada32a8bd906826d6b0f47a192))
+* Merge pull request #145 from JaCraig/dependabot/nuget/Environs.Tests/dependencies-1aaad36d12 ([9288a40](https://www.github.com/JaCraig/Environs/commit/9288a400ea99d6d54d070df93428d30e41f03ee2))
+* Merge pull request #146 from JaCraig/dependabot/nuget/Environs/dependencies-a441772426 ([3be6774](https://www.github.com/JaCraig/Environs/commit/3be67743af30789ac404218129b93ad449b5e2d2))
+* Merge pull request #147 from JaCraig/dependabot/nuget/Environs.Tests/dependencies-ed859a41c4 ([4ed6f9f](https://www.github.com/JaCraig/Environs/commit/4ed6f9f65b203887c10762115f8084340abdb618))
+* Merge pull request #148 from JaCraig/dependabot/nuget/Environs/dependencies-cfecef41d4 ([7ff23de](https://www.github.com/JaCraig/Environs/commit/7ff23de923720015d9b550aed8a924689ea4f4d1))
+* Bump the dependencies group with 1 update ([469c0fc](https://www.github.com/JaCraig/Environs/commit/469c0fcb31ae1ac03116a8169d7632cbfe54d1b7))
+* Bump the dependencies group with 2 updates ([70d4fff](https://www.github.com/JaCraig/Environs/commit/70d4fff5f22a6d5f4d0f7eedc927c7e1af6e199f))
+* Bump the dependencies group with 2 updates ([96b132a](https://www.github.com/JaCraig/Environs/commit/96b132a1df3beb04bb3c4c64ffb8f424a69faa56))
+* Bump the dependencies group with 3 updates ([7d34a2c](https://www.github.com/JaCraig/Environs/commit/7d34a2ca64bb817613096f1e3684de85be5f4ca0))
+* Bump the dependencies group with 4 updates ([d619784](https://www.github.com/JaCraig/Environs/commit/d61978477733b8d31a5ce939692fc9692de1daac))
+
 <a name="3.3.5"></a>
 ## [3.3.5](https://www.github.com/JaCraig/Environs/releases/tag/v3.3.5) (2026-08-19)
 
