@@ -15,7 +15,7 @@
     <Copyright>Copyright © James Craig 2017</Copyright>
     <PackageTags>wmi;ldap;Windows Management Instrumentation;Lightweight Directory Access
       Protocol;System Management</PackageTags>
-    <Version>3.3.4</Version>
+    <Version>3.3.5</Version>
     <Title>Environs</Title>
     <PackageIcon>Icon.png</PackageIcon>
     <PackageReadmeFile>README.md</PackageReadmeFile>
@@ -49,9 +49,9 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="Microsoft.Windows.Compatibility" Version="10.0.8" />
-    <PackageReference Include="Microsoft.SourceLink.GitHub" Version="10.0.300" PrivateAssets="All" />
-    <PackageReference Include="Microsoft.CodeAnalysis.NetAnalyzers" Version="10.0.300">
+    <PackageReference Include="Microsoft.Windows.Compatibility" Version="10.0.14" />
+    <PackageReference Include="Microsoft.SourceLink.GitHub" Version="10.0.403" PrivateAssets="All" />
+    <PackageReference Include="Microsoft.CodeAnalysis.NetAnalyzers" Version="10.0.403">
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>

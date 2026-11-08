@@ -2,6 +2,31 @@
 
 All notable changes to this project will be documented in this file. See [versionize](https://github.com/versionize/versionize) for commit guidelines.
 
+<a name="3.3.5"></a>
+## [3.3.5](https://www.github.com/JaCraig/Environs/releases/tag/v3.3.5) (2026-08-19)
+
+### Bug Fixes
+
+* Bump the dependencies group with 1 update ([db52b32](https://www.github.com/JaCraig/Environs/commit/db52b32dac79d7ed514a7a8999cf1d56b13446f3))
+
+### Other
+
+* Merge pull request #132 from JaCraig/dependabot/nuget/Environs.Tests/dependencies-041891a2d4 ([ef33ce6](https://www.github.com/JaCraig/Environs/commit/ef33ce66061888096acd70c031fe3f95ec81bef3))
+* Merge pull request #133 from JaCraig/dependabot/nuget/Environs/dependencies-f9f6f0d3a9 ([9e68a31](https://www.github.com/JaCraig/Environs/commit/9e68a31ff394dda7096f773635993553c4facb1d))
+* Merge pull request #134 from JaCraig/dependabot/nuget/Environs.Tests/dependencies-407341980e ([3060d3e](https://www.github.com/JaCraig/Environs/commit/3060d3e1224edae00ec7d695a8d93f084e662f5c))
+* Merge pull request #135 from JaCraig/dependabot/nuget/Environs/dependencies-79ef369f0c ([1217a49](https://www.github.com/JaCraig/Environs/commit/1217a49fadd19521cae2aa3e9ae4d8e58811869c))
+* Merge pull request #136 from JaCraig/dependabot/nuget/Environs.Tests/dependencies-1895c8db5f ([7750157](https://www.github.com/JaCraig/Environs/commit/775015720243627e7ab1463859ad3aeedda42e38))
+* Merge pull request #137 from JaCraig/dependabot/nuget/dot-config/dependencies-d580172a4f ([ff21160](https://www.github.com/JaCraig/Environs/commit/ff21160950804c69bff7a971883154e6728267f0))
+* Merge pull request #138 from JaCraig/dependabot/nuget/Environs/dependencies-ec5d13878c ([d83f22b](https://www.github.com/JaCraig/Environs/commit/d83f22b70fca773deac505e9eb14ced1ccafcbdb))
+* Merge pull request #139 from JaCraig/dependabot/nuget/Environs.Tests/dependencies-b5a8bd656f ([fa6b502](https://www.github.com/JaCraig/Environs/commit/fa6b502062055d7cc5c2b0b1b873f2312845cc45))
+* Bump Microsoft.NET.Test.Sdk from 18.5.1 to 18.6.0 ([1f4d3ce](https://www.github.com/JaCraig/Environs/commit/1f4d3ce7a69b0ddbbdba1740a399f753288a1f19))
+* Bump the dependencies group with 1 update ([d7b47e9](https://www.github.com/JaCraig/Environs/commit/d7b47e98c5d0e5ee21b12b2fa84006afd8f93a56))
+* Bump the dependencies group with 2 updates ([eb06085](https://www.github.com/JaCraig/Environs/commit/eb060851f642dfe258a72753728bd560be85e3bc))
+* Bump the dependencies group with 2 updates ([909bcb0](https://www.github.com/JaCraig/Environs/commit/909bcb0244ae1226ad98f3d5313403302e813478))
+* Bump the dependencies group with 3 updates ([29473c4](https://www.github.com/JaCraig/Environs/commit/29473c440e843350c8e2c0fec1120d3dcfe9ed59))
+* Bump the dependencies group with 3 updates ([50d6ffc](https://www.github.com/JaCraig/Environs/commit/50d6ffc08db2b3fd5bab43d069bc0b711dccbedc))
+* Bump the dependencies group with 4 updates ([d49a68c](https://www.github.com/JaCraig/Environs/commit/d49a68cee01fed96cf3d379db93e021fa124d995))
+
 <a name="3.3.4"></a>
 ## [3.3.4](https://www.github.com/JaCraig/Environs/releases/tag/v3.3.4) (2026-05-27)
 
