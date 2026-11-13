@@ -2,6 +2,17 @@
 
 All notable changes to this project will be documented in this file. See [versionize](https://github.com/versionize/versionize) for commit guidelines.
 
+<a name="4.0.0"></a>
+## [4.0.0](https://www.github.com/JaCraig/Environs/releases/tag/v4.0.0) (2026-11-13)
+
+### Features
+
+* **projects:** update target frameworks and package references ([0425f94](https://www.github.com/JaCraig/Environs/commit/0425f941571220db5036a4ed4f551d7055f25fed))
+
+### Breaking Changes
+
+* **projects:** update target frameworks and package references ([0425f94](https://www.github.com/JaCraig/Environs/commit/0425f941571220db5036a4ed4f551d7055f25fed))
+
 <a name="3.3.6"></a>
 ## [3.3.6](https://www.github.com/JaCraig/Environs/releases/tag/v3.3.6) (2026-11-08)
 
